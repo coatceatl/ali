@@ -6,7 +6,7 @@
     <title>Aliexpress</title>
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/all.css'
                            integrity='sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ' crossorigin='anonymous'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic-ext' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic-ext' rel='stylesheet'>
     <link rel='stylesheet' href='dist/main.css'>
   </head>
   <body>
@@ -27,7 +27,7 @@
           </div>
           <div class='phone'>
             <i class='fa fa-phone-volume header-top__icon icon-blue' aria-hidden='true'></i>
-            <p class='phone__text'>8 (012) 345-67-89</p>
+            <p class='phone__text'>8 (012) <span class='bold'>345-67-89</span></p>
           </div>
           <a class='header-top__button' href='#'>
             <i class='fa fa-comment header-top__icon' aria-hidden='true'></i>Чат
@@ -36,15 +36,19 @@
             <i class='fa fa-balance-scale icon-blue' aria-hidden='true'></i>
           </a>
           <a href='#'>
-            <i class='far fa-heart' aria-hidden='true'></i>
-            <i class='fa fa-heart' aria-hidden='true'></i>
+            <i class='far fa-heart d-none' aria-hidden='true'></i>
+            <i class='fa fa-heart icon-red' aria-hidden='true'></i>
           </a>
-          <a class='header-top__cart' href='#' id='cart'>
-            <i class='fa fa-cart-plus header-top__icon' aria-hidden='true'></i>
-            <span class='header-top__cart-text' aria-hidden='true'>В корзине
-              <span class='header-top__cart-count' aria-hidden='true' id='cart-count'> 1</span>товар
-            </span>
-            <span class='header-top__cart-cost' aria-hidden='true'>1 158 р.</span>
+          <a class='header-top__cart d-flex' href='#' id='cart'>
+            <div class='cart-img'>
+              <img src='src/img/cart.png'>
+            </div>
+            <div class='cart-content d-flex flex-column'>
+              <span class='header-top__cart-text' aria-hidden='true'>В корзине
+                <span class='header-top__cart-count' aria-hidden='true' id='cart-count'> 1 </span>товар
+              </span>
+              <span class='header-top__cart-cost' aria-hidden='true'>1 158 р.</span>
+            </div>
           </a>
           <a class='header-top__button' href='#'>
             <i class='fa fa-user header-top__icon' aria-hidden='true'></i>Войти
