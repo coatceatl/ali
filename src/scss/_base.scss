@@ -1,6 +1,13 @@
 body {
-  background-color: #fff;
+  font-family: $font-family-sans-serif;
 }
 .button {
   background-color: #064b99;
+  font-size: remy(14px);
+  font-weight: 400;
+  line-height: 18px;
+  color: #fff;
+}
+.button-ellipse {
+  border-radius: 25px;
 }
