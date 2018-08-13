@@ -1,8 +1,11 @@
-.container {
-  background-color: lightgreen; }
+body {
+  background-color: #fff; }
 
-.title {
-  color: red; }
+.button {
+  background-color: #064b99; }
+
+.header__top {
+  background-color: #ecf1f5; }
 
 /*!
  * Bootstrap v4.1.1 (https://getbootstrap.com/)
