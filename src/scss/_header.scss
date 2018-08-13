@@ -1,3 +1,31 @@
 .header__top {
   background-color: #ecf1f5;
 }
+.header-top__button {
+  background-color: #064b99;
+  font-family: $font-family-sans-serif;
+  font-size: remy(14px);
+  font-weight: 400;
+  line-height: remy(18px);
+  color: #fff;
+  border-radius: 25px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+  padding: 18px 20px;
+}
+.header-top__icon {
+  margin-right: 10px;
+}
+.header-top__link {
+  color: #222;
+  font-size: remy(14px);
+  font-weight: 400;
+}
+.phone {
+  display: flex;
+  align-items: center;
+  color: #222;
+  font-size: remy(14px);
+}
+.phone__text {
+  margin-bottom: 0;
+}
