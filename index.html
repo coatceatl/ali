@@ -56,8 +56,22 @@
         </div>
       </nav>
 
-      <div class='container header-bottom'>
-        <div class='row swiper-container'>
+      <div class='header-bottom'>
+        <div class='container'>
+          <div class='row search'>
+            <div class='col-md-4'>
+              <a class='header-bottom__button' href='#'>Товары</a>
+              <a class='header-bottom__button-outline' href='#'>Услуги</a>
+            </div>
+            <div class='col-md-8'>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Настроить поиск</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class='container swiper-container swiper-container-horizontal'>
           <div class='d-flex swiper-wrapper'>
             <div class='swiper-slide'><img src='src/img/slide-1.png' alt=''></div>
             <div class='swiper-slide'><img src='src/img/slide-2.png' alt=''></div>
@@ -65,6 +79,7 @@
             <div class='swiper-slide'><img src='src/img/slide-3.png' alt=''></div>
             <div class='swiper-slide'><img src='src/img/slide-4.png' alt=''></div>
           </div>
+
           <div class='swiper-button-next'><i class='fa fa-chevron-left'></i></div>
           <div class='swiper-button-prev'><i class='fa fa-chevron-right'></i></div>
         </div>

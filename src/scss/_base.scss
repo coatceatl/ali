@@ -7,4 +7,28 @@ body {
 .icon-red {
   color: #ef301d;
 }
+.header-bottom__button {
+  background-color: #064b99;
+  font-family: $font-family-sans-serif;
+  font-size: remy(15px);
+  font-weight: 400;
+  line-height: remy(18px);
+  color: #fff;
+  border-radius: 25px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+  padding: 19px 30px 16px 30px;
+}
+.header-bottom__button-outline {
+  background-color: #fff;
+  font-family: $font-family-sans-serif;
+  font-size: remy(15px);
+  font-weight: 400;
+  line-height: remy(18px);
+  color: #333;
+  border-radius: 25px;
+  border: 1px solid #064b99;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+  padding: 19px 30px 16px 30px;
+}
+
 
