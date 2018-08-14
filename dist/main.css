@@ -7,6 +7,9 @@ body {
 .icon-red {
   color: #ef301d; }
 
+.icon-menu {
+  color: #064b99; }
+
 .header-bottom__button {
   background-color: #064b99;
   font-family: "Open Sans", sans-serif;
@@ -109,6 +112,11 @@ body {
   margin-left: -20px;
   top: 50%; }
 
+.input-group {
+  border: 1px solid #e6e7e9;
+  border-radius: 7px;
+  background-color: #fff; }
+
 .btn.button-search {
   background-color: #ecf1f5;
   color: #222;
@@ -116,6 +124,36 @@ body {
   font-weight: 400;
   padding: 20px 30px 18px 30px;
   line-height: 1.125rem; }
+
+.header-bottom__icon {
+  margin-right: 19px;
+  margin-left: 4px; }
+
+.form-control.header-bottom__options-form {
+  border: none;
+  padding-left: 30px;
+  border-radius: 7px; }
+
+.header-menu__icon {
+  margin-right: 9px; }
+
+.nav-menu {
+  width: 100%;
+  padding-left: 0; }
+
+.nav-link {
+  color: #333;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 18px; }
+
+.header-nav-item {
+  border-right: 1px solid #d3d6dc;
+  padding-right: 20px; }
+
+.header-nav-link {
+  font-size: 1rem;
+  font-weight: 700; }
 
 /*!
  * Bootstrap v4.1.1 (https://getbootstrap.com/)
