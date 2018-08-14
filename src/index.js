@@ -33,10 +33,12 @@ $(document).ready(function() {
       slidesPerView: 3,
       spaceBetween: 10
     },
+    // when window width is <= 1140px
     1140: {
       slidesPerView: 4,
       spaceBetween: 15
     },
+    // when window width is <= 1200px
     1200: {
       slidesPerView: 5,
       spaceBetween: 15
