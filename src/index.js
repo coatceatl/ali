@@ -8,6 +8,7 @@ $(document).ready(function() {
   var mySwiper = new Swiper('.swiper-container', {
     slidesPerView: 5,
     spaceBetween: 15,
+    loop: true,
  //   grabCursor: true,
 
     breakpoints: {

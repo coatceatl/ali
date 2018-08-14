@@ -81,13 +81,36 @@ body {
   margin-left: 12px; }
 
 .swiper-container {
-  height: 160px; }
+  height: 160px;
+  margin-top: 40px;
+  overflow: hidden; }
 
 .header-bottom {
   margin: 60px auto; }
 
 .search {
   margin-bottom: 40px; }
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #e6e7e9;
+  border-radius: 50%;
+  background-color: #fff; }
+
+.swiper-button-next {
+  position: absolute;
+  right: 0;
+  top: 50%; }
+
+.swiper-button-prev {
+  position: absolute;
+  margin-left: -20px;
+  top: 50%; }
 
 /*!
  * Bootstrap v4.1.1 (https://getbootstrap.com/)
