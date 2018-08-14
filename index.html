@@ -58,18 +58,23 @@
 
       <div class='header-bottom'>
         <div class='container'>
-          <div class='row search'>
-            <div class='col-md-4'>
+          <div class='row d-flex align-items-center header-bottom__options'>
+            <div class='col-md-4 d-flex align-items-center justify-content-between header-bottom__options-left'>
               <a class='header-bottom__button' href='#'>Товары</a>
+              <img src='src/img/search.png' alt=''>
               <a class='header-bottom__button-outline' href='#'>Услуги</a>
             </div>
-            <div class='col-md-8'>
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Настроить поиск</button>
+            <div class='col-md-8 header-bottom__options-right'>
+              <form class='form-inline my-2 my-lg-0'>
+                <input class='form-control' type='search' placeholder='Введите название товара или услуги...'
+                aria-label='search'
+                <i class='fa fa-search icon-blue' aria-hidden='true'></i>/>
+                <button class='btn button-search my-2 my-sm-0' type='submit'>Настроить поиск</button>
               </form>
             </div>
-            <div class='col-md-12'>
+          </div>
+          <div class='row'>
+            <div class='col-md-12 header-bottom__slider'>
               <div class='swiper-container swiper-container-horizontal'>
                 <div class='d-flex swiper-wrapper'>
                   <div class='swiper-slide'><img src='src/img/slide-1.png' alt=''></div>

@@ -7,8 +7,9 @@ import Swiper from 'swiper';
 $(document).ready(function() {
   var mySwiper = new Swiper('.swiper-container', {
     slidesPerView: 5,
-    spaceBetween: 15,
+    spaceBetween: 22,
     loop: true,
+    loopFillGroupWithBlank: true,
  //   grabCursor: true,
 
     breakpoints: {
@@ -25,7 +26,7 @@ $(document).ready(function() {
     // when window width is <= 640px
     768: {
       slidesPerView: 3,
-      spaceBetween: 15
+      spaceBetween: 20
     },
 
     992: {

@@ -56,9 +56,6 @@
 .header-bottom {
   margin: 60px auto;
 }
-.search {
-  margin-bottom: 40px;
-}
 .swiper-button-next,
 .swiper-button-prev {
   display: flex;
@@ -79,4 +76,14 @@
   position: absolute;
   margin-left: -20px;
   top: 50%;
+}
+.btn.button-search {
+   background-color: #ecf1f5;
+   color: #222;
+   font-size: remy(13px);
+   font-weight: 400;
+   padding: 20px 30px 18px 30px;
+   line-height: remy(18px);
+}
+.header-bottom__options {
 }
