@@ -1,14 +1,12 @@
 .popular {
   background-color: #f9f9f9;
-}
-.popular-header {
   padding-top: 50px;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
 }
 .popular-content {
   height: 437px;
   width: 263px;
-  margin-bottom: 30px;
+  margin-top: 30px;
 }
 .card-img-top.popular-content__img {
   margin-top: 40px;
@@ -20,7 +18,7 @@
 .popular-content__pro {
   position: absolute;
   top: 30px;
-  right: 40px;
+  right: 30px;
   background-color: #e73237;
   width: 74px;
   height: 25px;
@@ -59,5 +57,15 @@
   font-size: remy(16px);
   font-weight: 400;
   text-decoration: line-through;
+}
+.view-more {
+  box-shadow: 0 0 25px rgba(16, 25, 32, 0.1);
+  border-radius: 3px;
+  background-color: #fff;
+  color: #222;
+  font-size: remy(15px);
+  font-weight: 400;
+  padding: 18px 40px 15px 40px;
+  margin-top: 30px;
 }
 
