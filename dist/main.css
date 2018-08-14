@@ -13,6 +13,9 @@ body {
 .m-icon {
   margin-right: 10px; }
 
+.mt-30 {
+  margin-top: 30px !important; }
+
 .header-bottom__button {
   background-color: #064b99;
   font-family: "Open Sans", sans-serif;
@@ -100,7 +103,7 @@ body {
   overflow: hidden; }
 
 .header-bottom {
-  margin: 60px auto; }
+  margin-bottom: 60px; }
 
 .swiper-button-next {
   position: absolute;
