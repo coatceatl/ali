@@ -12,9 +12,6 @@
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
   padding: 18px 20px;
 }
-.header-top__icon {
-  margin-right: 10px;
-}
 .header-top__link {
   color: #222;
   font-size: remy(14px);
@@ -55,17 +52,6 @@
 }
 .header-bottom {
   margin: 60px auto;
-}
-.swiper-button-next,
-.swiper-button-prev {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border: 2px solid #e6e7e9;
-  border-radius: 50%;
-  background-color: #fff;
 }
 .swiper-button-next {
   position: absolute;
