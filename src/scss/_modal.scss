@@ -5,6 +5,7 @@
   width: 59px;
   height: 59px;
   margin: 5px;
+  margin-top: 0;
 }
 .modal-title {
   color: #252525;
@@ -37,6 +38,11 @@
   font-size: remy(15px);
   font-weight: 400;
   line-height: remy(18px);
+  &:hover {
+    color: #252525;
+    font-weight: 700;
+    text-decoration: none;
+  }
 }
 /*
 .modal-social__link {
