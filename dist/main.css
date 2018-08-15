@@ -9,13 +9,10 @@ ul {
   margin: 0;
   padding: 0; }
 
-/*
-.hidden-xs {
-  @media(max-width: 576px) {
-    display: none;
-  }
-}
-*/
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hidden-lg {
+    display: none; } }
+
 .icon-blue {
   color: #27a3bf; }
 
@@ -27,6 +24,9 @@ ul {
 
 .m-icon {
   margin-right: 10px; }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .m-icon {
+      margin-right: 0; } }
 
 .mt-30 {
   margin-top: 30px !important; }
