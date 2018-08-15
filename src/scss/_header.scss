@@ -129,4 +129,9 @@
   font-size: remy(16px);
   font-weight: 700;
 }
+.dropdown-toggle {
+  &:after {
+    display: none !important;
+  }
+}
 

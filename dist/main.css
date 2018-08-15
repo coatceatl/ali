@@ -193,6 +193,9 @@ ul {
   font-size: 1rem;
   font-weight: 700; }
 
+.dropdown-toggle:after {
+  display: none !important; }
+
 .popular {
   background-color: #f9f9f9;
   padding-top: 50px;
