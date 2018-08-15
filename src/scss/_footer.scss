@@ -37,6 +37,14 @@
   border: none;
   box-shadow: 0 10px 20px rgba(5, 22, 65, 0.2);
   padding: 17px 19px 15px 20px;
+
+  &:hover {
+    background-color: #27a3bf;
+    color: #fff;
+  }
+  &:focus {
+    outline: none;
+  }
 }
 .form-control.footer__input {
   color: #999;
@@ -44,6 +52,10 @@
   font-weight: 400;
   line-height: remy(18px);
   padding-left: 30px;
+
+  &:focus {
+    outline: none;
+  }
 }
 .subscribe-title {
   color: #333;

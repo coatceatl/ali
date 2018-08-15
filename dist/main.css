@@ -15,12 +15,16 @@ ul {
 
 .icon-blue {
   color: #27a3bf; }
+  .icon-blue:hover {
+    color: #064b99; }
 
 .icon-red {
   color: #ef301d; }
 
 .icon-menu {
   color: #064b99; }
+  .icon-menu:hover {
+    color: #fff; }
 
 .m-icon {
   margin-right: 10px; }
@@ -34,10 +38,12 @@ ul {
 .header-outline.button-active {
   background-color: #064b99;
   color: #fff;
-  padding: 17px 30px 15px 30px; }
+  padding: 17px 30px 15px 30px;
+  border: 0; }
   .header-outline.button-active:hover {
     color: #fff;
-    text-decoration: none; }
+    text-decoration: none;
+    background-color: #27a3bf; }
 
 .header-outline {
   background-color: #fff;
@@ -64,6 +70,9 @@ ul {
   border-radius: 50%;
   background-color: #fff;
   color: #064b99; }
+  .border-icon:hover {
+    color: #fff;
+    background-color: #064b99; }
 
 .container-top {
   max-width: 1255px;
@@ -101,7 +110,8 @@ ul {
       padding: 0; } }
   .header-top__button:hover {
     color: #fff;
-    text-decoration: none; }
+    text-decoration: none;
+    background-color: #27a3bf; }
   .header-top__button:focus {
     outline: none; }
 
@@ -120,6 +130,10 @@ ul {
   color: #222;
   font-size: 0.875rem;
   font-weight: 400; }
+  .header-top__link:hover {
+    color: #222;
+    text-decoration: none;
+    font-weight: 700; }
 
 .phone {
   display: flex;
@@ -134,17 +148,30 @@ ul {
   font-weight: 600;
   font-size: 16px; }
 
+.header-top__cart:hover {
+  color: #333;
+  font-weight: 700;
+  text-decoration: none; }
+
 .header-top__text {
   color: #333;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 18px; }
+  .header-top__text:hover {
+    color: #333;
+    font-weight: 700;
+    text-decoration: none; }
 
 .header-top__cart-cost {
   color: #333;
   font-size: 0.9375rem;
   line-height: 18px;
   font-weight: 600; }
+  .header-top__cart-cost:hover {
+    color: #333;
+    font-weight: 700;
+    text-decoration: none; }
 
 .cart-content {
   margin-left: 12px; }
@@ -152,7 +179,8 @@ ul {
 .swiper-container {
   height: 160px;
   margin-top: 40px;
-  overflow: hidden; }
+  overflow: hidden;
+  cursor: pointer; }
 
 .header-bottom {
   margin-bottom: 60px; }
@@ -205,6 +233,9 @@ ul {
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 18px; }
+  .nav-link:hover {
+    color: #333;
+    font-weight: 700; }
 
 .header-nav-item {
   border-right: 1px solid #d3d6dc;
@@ -213,9 +244,44 @@ ul {
 .header-nav-link {
   font-size: 1rem;
   font-weight: 700; }
+  .header-nav-link:hover {
+    background-color: #064b99;
+    color: #fff; }
+
+.header-nav-link.icon-menu:before:hover {
+  background-color: #064b99;
+  color: #fff; }
+
+.dropdown-menu {
+  padding-bottom: 0 !important; }
 
 .dropdown-toggle:after {
   display: none !important; }
+
+.header-navigation-catalog__list {
+  display: flex;
+  align-items: center;
+  width: 278px;
+  height: 53px;
+  border-bottom: 1px solid #ebf0f4; }
+  .header-navigation-catalog__list:hover {
+    background-color: #fff; }
+
+.header-navigation-catalog__item {
+  color: #222;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 18px; }
+  .header-navigation-catalog__item:hover {
+    color: #222;
+    font-weight: 700;
+    background-color: #fff; }
+
+.header-navigation-catalog__item.header-nav-active {
+  background-color: #ebf0f4;
+  height: 100%;
+  display: flex;
+  align-items: center; }
 
 .popular {
   background-color: #f9f9f9;
@@ -327,6 +393,11 @@ ul {
   border: none;
   box-shadow: 0 10px 20px rgba(5, 22, 65, 0.2);
   padding: 17px 19px 15px 20px; }
+  .footer__button:hover {
+    background-color: #27a3bf;
+    color: #fff; }
+  .footer__button:focus {
+    outline: none; }
 
 .form-control.footer__input {
   color: #999;
@@ -334,6 +405,8 @@ ul {
   font-weight: 400;
   line-height: 1.125rem;
   padding-left: 30px; }
+  .form-control.footer__input:focus {
+    outline: none; }
 
 .subscribe-title {
   color: #333;
@@ -2647,7 +2720,7 @@ input[type="button"].btn-block {
   .dropdown-item:hover, .dropdown-item:focus {
     color: #16181b;
     text-decoration: none;
-    background-color: #f8f9fa; }
+    background-color: #fff; }
   .dropdown-item.active, .dropdown-item:active {
     color: #fff;
     text-decoration: none;

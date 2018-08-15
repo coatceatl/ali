@@ -17,12 +17,18 @@ ul {
 }
 .icon-blue {
   color: #27a3bf;
+  &:hover {
+    color: #064b99;
+  }
 }
 .icon-red {
   color: #ef301d;
 }
 .icon-menu {
   color: #064b99;
+  &:hover {
+    color: #fff;
+  }
 }
 .m-icon {
   margin-right: 10px;
@@ -38,10 +44,12 @@ ul {
   background-color: #064b99;
   color: #fff;
   padding: 17px 30px 15px 30px;
+  border: 0;
 
   &:hover {
     color: #fff;
     text-decoration: none;
+    background-color: #27a3bf;
   }
 }
 .header-outline {
@@ -71,5 +79,9 @@ ul {
   border-radius: 50%;
   background-color: #fff;
   color: #064b99;
+  &:hover {
+    color: #fff;
+    background-color: #064b99;
+  }
 }
 

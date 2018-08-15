@@ -37,6 +37,7 @@
   &:hover {
     color: #fff;
     text-decoration: none;
+    background-color: #27a3bf;
   }
   &:focus {
     outline: none;
@@ -58,6 +59,11 @@
   color: #222;
   font-size: remy(14px);
   font-weight: 400;
+  &:hover {
+    color: #222;
+    text-decoration: none;
+    font-weight: 700;
+  }
 }
 .phone {
   display: flex;
@@ -72,17 +78,34 @@
   font-weight: 600;
   font-size: 16px;
 }
+.header-top__cart {
+  &:hover {
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+  }
+}
 .header-top__text {
   color: #333;
   font-size: remy(14px);
   font-weight: 400;
   line-height: 18px;
+  &:hover {
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+  }
 }
 .header-top__cart-cost {
   color: #333;
   font-size: remy(15px);
   line-height: 18px;
   font-weight: 600;
+  &:hover {
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+  }
 }
 .cart-content {
   margin-left: 12px;
@@ -91,6 +114,7 @@
   height: 160px;
   margin-top: 40px;
   overflow: hidden;
+  cursor: pointer;
 }
 .header-bottom {
   margin-bottom: 60px;
@@ -144,6 +168,10 @@
   font-size: remy(14px);
   font-weight: 400;
   line-height: 18px;
+  &:hover {
+    color: #333;
+    font-weight: 700;
+  }
 }
 .header-nav-item {
   border-right: 1px solid #d3d6dc;
@@ -152,10 +180,52 @@
 .header-nav-link {
   font-size: remy(16px);
   font-weight: 700;
+  &:hover {
+    background-color: #064b99;
+    color: #fff;
+  }
+}
+.header-nav-link.icon-menu {
+  &:before {
+    &:hover {
+      background-color: #064b99;
+      color: #fff;
+    }
+  }
+}
+.dropdown-menu {
+  padding-bottom: 0 !important;
 }
 .dropdown-toggle {
   &:after {
     display: none !important;
   }
+}
+.header-navigation-catalog__list {
+  display: flex;
+  align-items: center;
+  width: 278px;
+  height: 53px;
+  border-bottom: 1px solid #ebf0f4;
+  &:hover {
+    background-color: #fff;
+  }
+}
+.header-navigation-catalog__item {
+  color: #222;
+  font-size: remy(16px);
+  font-weight: 400;
+  line-height: 18px;
+  &:hover {
+    color: #222;
+    font-weight: 700;
+    background-color: #fff;
+  }
+}
+.header-navigation-catalog__item.header-nav-active {
+  background-color: #ebf0f4;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 

@@ -151,12 +151,10 @@
                            </div>
                          </div>
                        </div>
-
                      </div>
                    </div>
                  </div>
                </li>
-
 
               <li class='header-top__item dropdown'>
                 <div class='dropbtn'></div>
@@ -215,48 +213,88 @@
         </div>
       </div>
 
-      <nav class='navbar navbar-expand-md header-nav navbar-light bg-light'>
-        <div class='container'>
-          <a href='#' class='d-flex nav-link header-nav-link'>
-            <i class='fa fa-bars header-menu__icon icon-menu' aria-hidden='true'></i>Категории
-          </a>
-          <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#mobile-open'>
-            <span class='navbar-toggler-icon'></span>
-          </button>
-          <div class='collapse navbar-collapse col-md-11' id='mobile-open'>
-            <ul class='navbar-nav nav-menu d-flex align-items-center justify-content-between'>
-              <li class='nav-item'>
-                <a href='#' class='nav-link active'>Электроника</a>
-              </li>
-              <li class='nav-item'>
-                <a href='#' class='nav-link'>Компьютеры</a>
-              </li>
-              <li class='nav-item'>
-                <a href='#' class='nav-link'>Бытовая техника</a>
-              </li>
-              <li class='nav-item'>
-                <a href='#' class='nav-link'>Детские товары</a>
-              </li>
-              <li class='nav-item'>
-                <a href='#' class='nav-link'>Зоотовары</a>
-              </li>
-              <li class='nav-item'>
-                <a href='#' class='nav-link'>Дом, дача, ремонт</a>
-              </li>
-              <li class='nav-item dropdown'>
-                <a href='#' class='nav-link dropdown-toggle' role='button' id='dropdown' data-toggle='dropdown'
-                  aria-haspopup='true' aria-expanded='false'>Ещё
-                  <i class='fa fa-chevron-down' aria-hidden='true'></i>
-                </a>
-                <div class='dropdown-menu' aria-labelledby='dropdown'>
-                  <a class='dropdown-item nav-link' href='#'>Menu 1</a>
+      <!-- header-navigarion -->
+      <nav class='navbar navbar-expand-md header-navigation'>
+        <div class='header-navigation__wrapper container'>
+          <div class='header-navigation__catalog'>
+            <div class='header-navigation-catalog__button dropdown'>
+              <a class='d-flex nav-link header-nav-link dropdown-toggle' href='#' role='button' id='headerNavigationDropdown'
+                 data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                <i class='fa fa-bars header-menu__icon icon-menu' aria-hidden='true'></i>Категории
+              </a>
+
+              <div class='header-navigation-catalog dropdown-menu' aria-labelledby='headerNavigationDropdown'>
+                <div class='header-navigation-catalog__list'>
+                  <a href='#' class='header-navigation-catalog__item dropdown-item'>Категория 1</a>
                 </div>
-              </li>
-            </ul>
+                <div class='header-navigation-catalog__list'>
+                  <a href='#' class='header-navigation-catalog__item dropdown-item'>Категория 2</a>
+                </div>
+                <div class='header-navigation-catalog__list'>
+                  <a href='#' class='header-navigation-catalog__item dropdown-item header-nav-active'>Категория 3</a>
+
+                  <!--
+                    <div class="dropright">
+                      <a href='#' role="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropright
+                      </a>
+                      <div class="dropdown-menu">
+                        <a href='#' class='header-navigation-submenu__item dropdown-item'>- Категория 1</a>
+                        <a href='#' class='header-navigation-submenu__item dropdown-item'>- Категория 1</a>
+                        <a href='#' class='header-navigation-submenu__item dropdown-item'>- Категория 1</a>
+                      </div>
+                    </div>
+                  </a>
+                  -->
+                </div>
+                <div class='header-navigation-catalog__list'>
+                  <a href='#' class='header-navigation-catalog__item dropdown-item'>Категория 4</a>
+                </div>
+                <div class='header-navigation-catalog__list'>
+                  <a href='#' class='header-navigation-catalog__item dropdown-item'>Категория 5</a>
+                </div>
+                <div class='header-navigation-catalog__list'>
+                  <a href='#' class='header-navigation-catalog__item dropdown-item'>Категория 6</a>
+                </div>
+                <div class='header-navigation-catalog__list'>
+                  <a href='#' class='header-navigation-catalog__item dropdown-item'>Категория 7</a>
+                </div>
+              </div>
+            </div>
           </div>
+
+          <ul class='navbar-nav nav-menu d-flex align-items-center justify-content-between'>
+            <li class='nav-item'>
+              <a href='#' class='nav-link'>Электроника</a>
+            </li>
+            <li class='nav-item'>
+              <a href='#' class='nav-link'>Компьютеры</a>
+            </li>
+            <li class='nav-item'>
+              <a href='#' class='nav-link'>Бытовая техника</a>
+            </li>
+            <li class='nav-item'>
+              <a href='#' class='nav-link'>Детские товары</a>
+            </li>
+            <li class='nav-item'>
+              <a href='#' class='nav-link'>Зоотовары</a>
+            </li>
+            <li class='nav-item'>
+              <a href='#' class='nav-link'>Дом, дача, ремонт</a>
+            </li>
+            <li class='nav-item dropdown'>
+              <a href='#' class='nav-link dropdown-toggle' role='button' id='dropdown' data-toggle='dropdown'
+                aria-haspopup='true' aria-expanded='false'>Ещё
+                <i class='fa fa-chevron-down' aria-hidden='true'></i>
+              </a>
+              <div class='dropdown-menu' aria-labelledby='dropdown'>
+                <a class='dropdown-item nav-link' href='#'>Menu 1</a>
+              </div>
+            </li>
+          </ul>
         </div>
       </nav>
-    </header>
+   </header>
 
     <main>
     <section class='popular'>
