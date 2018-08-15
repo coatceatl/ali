@@ -126,11 +126,14 @@ ul {
     display: flex;
     align-items: center; } }
 
+.header-top__item:focus, .header-top__item:active {
+  outline: none; }
+
 .header-top__link {
   color: #222;
   font-size: 0.875rem;
   font-weight: 400; }
-  .header-top__link:hover {
+  .header-top__link:hover, .header-top__link:focus, .header-top__link:active {
     color: #222;
     text-decoration: none;
     font-weight: 700; }
@@ -200,13 +203,25 @@ ul {
   border-radius: 7px;
   background-color: #fff; }
 
-.btn.button-search {
+.header-bottom__options-btn {
+  background-color: #fff;
+  border: 0; }
+  .header-bottom__options-btn:focus, .header-bottom__options-btn:active {
+    outline: none; }
+
+.header-bottom__options-link {
   background-color: #ecf1f5;
   color: #222;
   font-size: 0.8125rem;
   font-weight: 400;
   padding: 20px 30px 18px 30px;
-  line-height: 1.125rem; }
+  line-height: 1.125rem;
+  text-decoration: none; }
+  .header-bottom__options-link:focus, .header-bottom__options-link:active, .header-bottom__options-link:hover {
+    outline: none;
+    text-decoration: none;
+    color: #fff;
+    background-color: #27a3bf; }
 
 .header-bottom__icon {
   margin-right: 19px;
