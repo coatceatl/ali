@@ -338,6 +338,63 @@ ul {
   font-weight: 400;
   line-height: 56px; }
 
+.modal-content {
+  width: 619px !important; }
+
+.modal-social {
+  width: 59px;
+  height: 59px;
+  margin: 5px; }
+
+.modal-title {
+  color: #252525;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.125rem; }
+
+.close {
+  margin-left: 0; }
+
+.modal-title {
+  width: 100%;
+  padding-top: 19px;
+  padding-margin: 17px; }
+
+.modal-body {
+  background-color: #f1f1f1; }
+
+.form-signin {
+  margin-top: 27px; }
+
+.modal-input {
+  margin-bottom: 12px; }
+
+.choose-signin {
+  margin-top: 29px; }
+
+.choose-title {
+  color: #252525;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.125rem; }
+
+/*
+.modal-social__link {
+  color: #fff;
+}
+.vk {
+  background-color: #757575;
+}
+.fb {
+  background-color: #3a579a;
+}
+.odnoklassniki {
+  background-color: #f77c00;
+}
+.google {
+  background-color: #df4e36;
+}
+*/
 /*!
  * Bootstrap v4.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors

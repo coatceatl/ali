@@ -91,7 +91,7 @@
                    <div class='modal-dialog modal-dialog-centered' role='document'>
                      <div class='modal-content'>
                        <div class='modal-header'>
-                         <h5 class='modal-title' id='authModalTitle'>Авторизуйтесь на сайте:</h5>
+                         <h5 class='modal-title text-center' id='authModalTitle'>Авторизуйтесь на сайте:</h5>
                          <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
                            <span aria-hidden='true'>&times;</span>
                          </button>
@@ -100,11 +100,11 @@
                          <div class='container'>
                            <div class='row'>
                              <div class='col-8 mx-auto'>
-                               <form class='form-signin'>
+                               <form class='form-signin text-center'>
                                  <label for="inputEmail" class="sr-only">Email address</label>
-                                 <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+                                 <input type="email" id="inputEmail" class="modal-input form-control" placeholder="Email address" required="" autofocus="">
                                  <label for="inputPassword" class="sr-only">Password</label>
-                                 <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+                                 <input type="password" id="inputPassword" class="modal-input form-control" placeholder="Password" required="">
                                  <button class='header-top__button' type='submit'>
                                    <i class='fa fa-user m-icon' aria-hidden='true'></i>Войти
                                  </button>
@@ -113,26 +113,45 @@
                            </div>
 
                            <div class='row choose-signin'>
-                             <div class='col-6'>
+                             <div class='col-4 offset-1'>
                                <h4 class='choose-title'>Вход с помощью приложения:</h4>
                                <div class='choose-content'>
                                  <img src='src/img/qr-icon.png' alt=''>
                                </div>
                              </div>
-                             <div class='col-6'>
+                             <div class='col-4 offset-1'>
                                <h4 class='choose-title'>Вход с помощью социальных сетей:</h4>
                                <div class='choose-content'>
                                  <div class='row'>
-                                   <div class='col-6 modal-social fb'>
-                                     <a class='footer-bottom__link' href='#' target='_blank'><i class='fab fa-facebook-f'></i></a>
+                                   <div class='col-12 flex-inline modal-social fb'>
+                                     <a class='modal-social__link' href='#' target='_blank'>
+                                       <img src='src/img/fb.png' alt=''>
+                                     </a>
+                                     <a class='modal-social__link' href='#' target='_blank'>
+                                       <img src='src/img/vk.png' alt=''>
+                                     </a>
+                                   </div>
+                                   <div class='col-12 flex-inline modal-social odnoklassniki'>
+                                     <a class='footer-bottom__link' href='#' target='_blank'>
+                                       <img src='src/img/class.png' alt=''>
+                                     </a>
+                                     <a class='footer-bottom__link' href='#' target='_blank'>
+                                       <img src='src/img/google.png' alt=''>
+                                     </a>
                                    </div>
                                  </div>
                                </div>
                              </div>
                            </div>
 
+                           <div class='row mt-35'>
+                             <div class='col-12 text-center'>
+                               <h4 class='choose-title'>Впервые на сайте?</h4>
+                             </div>
+                           </div>
                          </div>
                        </div>
+
                      </div>
                    </div>
                  </div>
