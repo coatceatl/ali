@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'MyriadPro';
+  src: url('../fonts/MyriadPro.otf') format('opentype'),
+}
+
 body {
   font-family: $font-family-sans-serif;
 }

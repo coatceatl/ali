@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'MyriadPro';
+  src: url(fonts/MyriadPro.otf) format("opentype"); }
+
 body {
   font-family: "Open Sans", sans-serif; }
 
@@ -283,6 +287,27 @@ ul {
   font-weight: 400;
   line-height: 1.875rem; }
 
+.footer-bottom {
+  border-top: 1px solid #828282;
+  margin-top: 37px;
+  padding-top: 20px; }
+
+.footer-bottom__title {
+  font-family: "MyriadPro", monospace;
+  color: #333;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  margin-top: 20px; }
+
+.footer-bottom__list {
+  list-style: none; }
+
+.footer-bottom__link {
+  color: #666;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 56px; }
+
 /*!
  * Bootstrap v4.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -317,7 +342,7 @@ ul {
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
   --font-family-sans-serif: "Open Sans", sans-serif;
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  --font-family-monospace: "MyriadPro", monospace; }
 
 *,
 *::before,
@@ -443,7 +468,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: "MyriadPro", monospace;
   font-size: 1em; }
 
 pre {
@@ -6358,7 +6383,7 @@ button.bg-dark:focus {
     margin-left: auto !important; } }
 
 .text-monospace {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  font-family: "MyriadPro", monospace; }
 
 .text-justify {
   text-align: justify !important; }
