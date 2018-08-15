@@ -11,6 +11,7 @@
   width: 263px;
   margin-top: 30px;
 }
+/*
 .card-img-top.popular-content__img {
   margin-top: 40px;
   margin-left: 30px;
@@ -18,12 +19,18 @@
   width: 203px;
   height: 203px;
 }
-.popular-content__pro {
+*/
+.card-header {
+  margin-top: 40px;
+  padding-top: 0;
+  position: relative;
+  top: 0;
+}
+.popular-content__sale {
   position: absolute;
-  top: 30px;
-  right: 30px;
+  top: -10px;
+  right: 20px;
   background-color: #e73237;
-  width: 74px;
   height: 25px;
   color: #ecf1f5;
   font-size: remy(13px);
@@ -31,6 +38,9 @@
   line-height: remy(18px);
   border-radius: 3px;
   padding: 4px 15px 3px 15px;
+}
+.sale-popular {
+  background-color: #27a3bf;
 }
 .card-category {
   color: #999;
