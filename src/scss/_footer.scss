@@ -1,3 +1,48 @@
 .footer {
   background-color: #ecf1f5;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+.footer-menu__header {
+  color: #333;
+  font-size: remy(16px);
+  font-weight: 700;
+  line-height: remy(24px);
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.footer-menu__link {
+  color: #666;
+  font-size: remy(14px);
+  font-weight: 400;
+  line-height: remy(30px);
+}
+.footer__form {
+  margin-top: 30px;
+  border: 1px solid #e6e7e9;
+  border-radius: 7px;
+}
+.footer__button {
+  color: #fff;
+  font-size: remy(15px);
+  font-weight: 400;
+  line-height: remy(18px);
+  background-color: #064b99;
+  border-radius: 0 7px 7px 0;
+  border: none;
+  box-shadow: 0 10px 20px rgba(5, 22, 65, 0.2);
+  padding: 17px 19px 15px 20px;
+}
+.form-control.footer__input {
+  color: #999;
+  font-size: remy(13px);
+  font-weight: 400;
+  line-height: remy(18px);
+  padding-left: 30px;
+}
+.subscribe-title {
+  color: #333;
+  font-size: remy(15px);
+  font-weight: 400;
+  line-height: remy(30px);
 }
