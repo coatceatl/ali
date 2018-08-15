@@ -16,6 +16,11 @@
   font-size: remy(14px);
   font-weight: 400;
   line-height: remy(30px);
+
+  &:hover {
+    color: #666;
+    text-decoration: none;
+  }
 }
 .footer__form {
   margin-top: 30px;
