@@ -32,7 +32,7 @@
                   <a class='header-top__link' href='#'>
                     <i class='fa fa-map-marker-alt m-icon icon-blue' aria-hidden='true'></i>
                     <span class='hidden-lg'>Ваш город</span>
-                    <i class='fa fa-chevron-down hidden-xs' aria-hidden='true'></i>
+                    <i class='fa fa-chevron-down hidden-lg' aria-hidden='true'></i>
                   </a>
                 </div>
               </li>
@@ -181,16 +181,14 @@
               <a class='header-bottom__button-outline' href='#'>Услуги</a>
             </div>
             <div class='col-12 col-lg-8 header-bottom__options-right mt-30'>
-              <div class='input-group'>
+              <form class='input-group'>
                 <input class='form-control header-bottom__options-form' type='search' placeholder='Введите название товара или услуги...'
-                aria-label='search'/>
+                aria-label='search' aria-describedby='#button-search'/>
                 <div class='input-group-append d-flex align-items-center header-bottom__options-search'>
-                  <a class='header-bottom__options-link' href='#'>
                     <i class='fa fa-search header-bottom__icon icon-blue' aria-hidden='true'></i>
-                  </a>
-                  <button class='btn button-search my-2 my-sm-0' type='submit'>Настроить поиск</button>
+                  <button class='header-bottom__options-link btn button-search my-2 my-sm-0' type='button' id='button-search'>Настроить поиск</button>
                 </div>
-              </div>
+              </form>
             </div>
           </div>
           <div class='row'>
@@ -219,7 +217,7 @@
 
       <nav class='navbar navbar-expand-md header-nav navbar-light bg-light'>
         <div class='container'>
-          <a href='#' class='nav-link header-nav-link'>
+          <a href='#' class='d-flex nav-link header-nav-link'>
             <i class='fa fa-bars header-menu__icon icon-menu' aria-hidden='true'></i>Категории
           </a>
           <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#mobile-open'>
