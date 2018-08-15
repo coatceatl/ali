@@ -83,10 +83,70 @@
                 </a>
               </li>
               <li class='header-top__item'>
-                <a class='header-top__button' href='#'>
-                  <i class='fa fa-user m-icon' aria-hidden='true'></i>
-                  <span class='hidden-lg'>Войти</span>
-                </a>
+                 <button class='header-top__button' type='button' data-toggle='modal' data-target='#authModal'>
+                   <i class='fa fa-user m-icon' aria-hidden='true'></i>Войти
+                 </button>
+
+                 <div class='modal fade' id='authModal' tabindex='-1' role='dialog' aria-labelledby='authModalTitle' aria-hidden='true'>
+                   <div class='modal-dialog modal-dialog-centered' role='document'>
+                     <div class='modal-content'>
+                       <div class='modal-header'>
+                         <h5 class='modal-title' id='authModalTitle'>Авторизуйтесь на сайте:</h5>
+                         <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
+                           <span aria-hidden='true'>&times;</span>
+                         </button>
+                       </div>
+                       <div class='modal-body'>
+                         <div class='container'>
+                           <div class='row'>
+                             <div class='col-8 mx-auto'>
+                               <form class='form-signin'>
+                                 <label for="inputEmail" class="sr-only">Email address</label>
+                                 <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+                                 <label for="inputPassword" class="sr-only">Password</label>
+                                 <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+                                 <button class='header-top__button' type='submit'>
+                                   <i class='fa fa-user m-icon' aria-hidden='true'></i>Войти
+                                 </button>
+                               </form>
+                             </div>
+                           </div>
+
+                           <div class='row choose-signin'>
+                             <div class='col-6'>
+                               <h4 class='choose-title'>Вход с помощью приложения:</h4>
+                               <div class='choose-content'>
+                                 <img src='src/img/qr-icon.png' alt=''>
+                               </div>
+                             </div>
+                             <div class='col-6'>
+                               <h4 class='choose-title'>Вход с помощью социальных сетей:</h4>
+                               <div class='choose-content'>
+                                 <div class='row'>
+                                   <div class='col-6 modal-social fb'>
+                                     <a class='footer-bottom__link' href='#' target='_blank'><i class='fab fa-facebook-f'></i></a>
+                                   </div>
+                                 </div>
+                               </div>
+                             </div>
+                           </div>
+
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </li>
+
+
+              <li class='header-top__item dropdown'>
+                <div class='dropbtn'></div>
+                <div class='dropdown-content'>
+                  <a class='flag active' href='#'>
+                    <img src='src/img/flag-ru.png' alt=''>
+                  </a>
+                  <a class='flag' href='#'></a>
+                </div>
               </li>
             </ul>
           </div>
