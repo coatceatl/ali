@@ -55,8 +55,10 @@ $(document).ready(function() {
   /* toogle buttons товары-услуги*/
 
    $('.header-bottom__options a').on('click', function(e) {
-    e.preventDefault();
+     e.preventDefault();
      $(this).addClass('button-active').siblings().removeClass('button-active');
+
+     //$('.header-outline').toggleClass('button-active');
   });
 });
 

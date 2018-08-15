@@ -163,7 +163,7 @@
     outline: none;
     text-decoration: none;
     color: #fff;
-    background-color: #27a3bf;
+    background-color: #064b99;
    }
 }
 .header-bottom__icon {
@@ -224,6 +224,11 @@
   &:after {
     display: none !important;
   }
+}
+.header-navigation {
+  padding-top: 25px;
+  padding-bottom: 22px;
+  border-top: 1px solid #e6e7e9;
 }
 .header-navigation-catalog__list {
   display: flex;

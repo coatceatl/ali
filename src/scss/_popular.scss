@@ -1,5 +1,5 @@
 .popular {
-  background-color: #f9f9f9;
+  background: url(../img/bg-popular.png) center center/cover no-repeat;
   padding-top: 50px;
   padding-bottom: 60px;
 }
@@ -76,7 +76,7 @@
   &:active {
     text-decoration: none;
     color: #fff;
-    background-color: #27a3bf;
+    background-color: #064b99;
   }
 }
 
