@@ -2,6 +2,7 @@ import $ from 'jquery';
 //import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap';
 
+/* slider */
 import Swiper from 'swiper';
 
 $(document).ready(function() {
@@ -50,5 +51,14 @@ $(document).ready(function() {
       prevEl: '.swiper-button-prev',
     },
   });
+
+  /* toogle buttons товары-услуги*/
+
+   $('.header-bottom__options a').on('click', function(e) {
+    e.preventDefault();
+     $(this).addClass('button-active').siblings().removeClass('button-active');
+  });
 });
+
+
 
