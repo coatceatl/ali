@@ -1,6 +1,11 @@
 .modal-content {
   width: 619px !important;
 }
+.modal-header-signup {
+  background-color: #064b99;
+  padding-top: 23px;
+  padding-bottom: 22px;
+}
 .modal-social {
   width: 59px;
   height: 59px;
@@ -12,6 +17,9 @@
   font-size: remy(18px);
   font-weight: 700;
   line-height: remy(18px);
+}
+.modal-title__signup {
+  color: #fff;
 }
 .close {
   margin-left: 0;
@@ -27,8 +35,12 @@
 .form-signin {
   margin-top: 27px;
 }
-.modal-input {
+.modal-input.form-control {
   margin-bottom: 12px;
+  color: #636363;
+  font-size: remy(14px);
+  border: 1px solid #8e8e8e;
+  border-radius: 4px;
 }
 .choose-signin {
   margin-top: 29px;
@@ -43,6 +55,26 @@
     font-weight: 700;
     text-decoration: none;
   }
+}
+.modal-text {
+  color: #252525;
+  font-size: remy(14px);
+  font-weight: 400;
+  line-height: remy(18px);
+}
+.sucsess {
+  color: #0e7624;
+  margin-top: 19px;
+}
+.alert {
+  color: #ff0000;
+  font-size: remy(12px);
+}
+.eye-password {
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #8e8e8e;
+  border-left: 0;
 }
 /*
 .modal-social__link {

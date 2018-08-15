@@ -102,10 +102,15 @@
                              <div class='col-8 mx-auto'>
                                <form class='form-signin text-center'>
                                  <label for="inputEmail" class="sr-only">Email address</label>
-                                 <input type="email" id="inputEmail" class="modal-input form-control" placeholder="Email address" required="" autofocus="">
-                                 <label for="inputPassword" class="sr-only">Password</label>
-                                 <input type="password" id="inputPassword" class="modal-input form-control" placeholder="Password" required="">
-                                 <button class='header-top__button' type='submit'>
+                                 <input type="email" id="inputEmail" class="modal-input form-control" placeholder="freelanser" required="" autofocus="" />
+                                 <div class="input-group mb-3">
+                                   <label for="inputPassword" class="sr-only">Password</label>
+                                   <input type="password" id="inputPassword" class="border-right-0 modal-input form-control" placeholder="**************" aria-describedby="eyePassword" required="" />
+                                   <div class="input-group-append">
+                                     <button class='eye-password'><img src='src/img/eye.png' alt=''></button>
+                                   </div>
+                                 </div>
+                                 <button class='header-top__button' type='button' id='eyePassword'>
                                    <i class='fa fa-user m-icon' aria-hidden='true'></i>Войти
                                  </button>
                                </form>
@@ -151,9 +156,55 @@
                            </div>
                          </div>
                        </div>
+
+
+                       <!-- signup -->
+                       <div class='modal-header-signup'>
+                         <h5 class='modal-title modal-title__signup text-center pt-0' id='signupTitle'>Регистрация</h5>
+                       </div>
+                       <div class='modal-body'>
+                         <div class='container'>
+                           <div class='row'>
+                             <div class='col-8 mx-auto'>
+                               <p class='choose-title'>Введите вашу электронную почту:</p>
+                               <form class='form-signin text-center'>
+                                 <label for="inputEmail" class="sr-only">Email address</label>
+                                 <input type='email' id='inputEmail' class='modal-input form-control' placeholder='xweb.fl@yandex.ru' required='' autofocus=''>
+                                 <p class='modal-text alert'>*Электронная почта указана некорректно!</p>
+                                 <button class='header-top__button' type='submit'>Зарегистрироваться</button>
+                               </form>
+                             </div>
+
+                             <div class='col-10 mx-auto text-center'>
+                               <p class='modal-text sucsess'>Все прошло успешно! На вашу электронную почту отправленно
+                               письмо с подтверждением регистрации.</p>
+                               <p class='modal-text'>Зарегистрироваться с помощью социальных сетей:</p>
+                             </div>
+                           </div>
+
+                           <div class='row choose-signin'>
+                             <div class='col-12 text-center'>
+                               <a class='modal-social__link' href='#' target='_blank'>
+                                 <img src='src/img/fb.png' alt=''>
+                               </a>
+                               <a class='modal-social__link' href='#' target='_blank'>
+                                 <img src='src/img/vk.png' alt=''>
+                               </a>
+                               <a class='footer-bottom__link' href='#' target='_blank'>
+                                 <img src='src/img/class.png' alt=''>
+                               </a>
+                               <a class='footer-bottom__link' href='#' target='_blank'>
+                                 <img src='src/img/google.png' alt=''>
+                               </a>
+                             </div>
+                           </div>
+
+                         </div>
+                       </div>
                      </div>
                    </div>
                  </div>
+
                </li>
 
               <li class='header-top__item dropdown'>
