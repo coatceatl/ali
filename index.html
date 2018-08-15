@@ -16,43 +16,70 @@
           <a class='navbar-brand' href='#'>
             <img src='src/img/logo.png' alt='logo'>
           </a>
-          <a class='header-top__button' href='#'>
-            <i class='fa fa-info m-icon' aria-hidden='true'></i>Инфо
-          </a>
-          <div class='header-top__location'>
-            <a class='header-top__link' href='#'>
-              <i class='fa fa-map-marker-alt m-icon icon-blue' aria-hidden='true'></i>Ваш город
-              <i class='fa fa-chevron-down' aria-hidden='true'></i>
-            </a>
+          <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#nav-toggle'>
+            <span class='navbar-toggler-icon'></span>
+          </button>
+          <div class='collapse navbar-collapse' id='nav-toggle'>
+            <ul class='navbar-nav header-top__menu d-flex justify-content-between'>
+              <li class='header-top__item'>
+                <a class='header-top__button' href='#'>
+                  <i class='fa fa-info m-icon' aria-hidden='true'></i>
+                  <span class='hidden-xs'>Инфо</span>
+                </a>
+              </li>
+              <li class='header-top__item'>
+                <div class='header-top__location'>
+                  <a class='header-top__link' href='#'>
+                    <i class='fa fa-map-marker-alt m-icon icon-blue' aria-hidden='true'></i>
+                    <span class='hidden-xs'>Ваш город</span>
+                    <i class='fa fa-chevron-down hidden-xs' aria-hidden='true'></i>
+                  </a>
+                </div>
+              </li>
+              <li class='header-top__item'>
+                <div class='phone'>
+                  <i class='fa fa-phone-volume m-icon icon-blue' aria-hidden='true'></i>
+                  <p class='phone__text hidden-xs'>8 (012) <span class='bold'>345-67-89</span></p>
+                </div>
+              </li>
+              <li class='header-top__item'>
+                <a class='header-top__button' href='#'>
+                  <i class='fa fa-comment m-icon' aria-hidden='true'></i>
+                  <span class='hidden-xs'>Чат</span>
+                </a>
+              </li>
+              <li class='header-top__item'>
+                <a href='#'>
+                  <i class='fa fa-balance-scale icon-blue' aria-hidden='true'></i>
+                </a>
+              </li>
+              <li class='header-top__item'>
+                <a href='#'>
+                  <i class='far fa-heart d-none' aria-hidden='true'></i>
+                  <i class='fa fa-heart icon-red' aria-hidden='true'></i>
+                </a>
+              </li>
+              <li class='header-top__item'>
+                <a class='header-top__cart d-flex' href='#' id='cart'>
+                  <div class='cart-img'>
+                    <img src='src/img/cart.png'>
+                  </div>
+                  <div class='cart-content d-flex flex-column'>
+                    <span class='header-top__cart-text hidden-xs' aria-hidden='true'>В корзине
+                      <span class='header-top__cart-count' aria-hidden='true' id='cart-count'> 1 </span>товар
+                    </span>
+                    <span class='header-top__cart-cost hidden-xs' aria-hidden='true'>1 158 р.</span>
+                  </div>
+                </a>
+              </li>
+              <li class='header-top__item'>
+                <a class='header-top__button' href='#'>
+                  <i class='fa fa-user m-icon' aria-hidden='true'></i>
+                  <span class='hidden-xs'>Войти</span>
+                </a>
+              </li>
+            </ul>
           </div>
-          <div class='phone'>
-            <i class='fa fa-phone-volume m-icon icon-blue' aria-hidden='true'></i>
-            <p class='phone__text'>8 (012) <span class='bold'>345-67-89</span></p>
-          </div>
-          <a class='header-top__button' href='#'>
-            <i class='fa fa-comment m-icon' aria-hidden='true'></i>Чат
-          </a>
-          <a href='#'>
-            <i class='fa fa-balance-scale icon-blue' aria-hidden='true'></i>
-          </a>
-          <a href='#'>
-            <i class='far fa-heart d-none' aria-hidden='true'></i>
-            <i class='fa fa-heart icon-red' aria-hidden='true'></i>
-          </a>
-          <a class='header-top__cart d-flex' href='#' id='cart'>
-            <div class='cart-img'>
-              <img src='src/img/cart.png'>
-            </div>
-            <div class='cart-content d-flex flex-column'>
-              <span class='header-top__cart-text' aria-hidden='true'>В корзине
-                <span class='header-top__cart-count' aria-hidden='true' id='cart-count'> 1 </span>товар
-              </span>
-              <span class='header-top__cart-cost' aria-hidden='true'>1 158 р.</span>
-            </div>
-          </a>
-          <a class='header-top__button' href='#'>
-            <i class='fa fa-user m-icon' aria-hidden='true'></i>Войти
-          </a>
         </div>
       </nav>
 
@@ -101,15 +128,16 @@
         </div>
       </div>
 
-      <nav class='navbar navbar-expand-md header-nav'>
+      <nav class='navbar navbar-expand-md header-nav navbar-light bg-light'>
         <div class='container'>
+          <a href='#' class='nav-link header-nav-link'>
+            <i class='fa fa-bars header-menu__icon icon-menu' aria-hidden='true'></i>Категории
+          </a>
+          <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#mobile-open'>
+            <span class='navbar-toggler-icon'></span>
+          </button>
           <div class='collapse navbar-collapse col-md-11' id='mobile-open'>
             <ul class='navbar-nav nav-menu d-flex align-items-center justify-content-between'>
-              <li class='header-nav-item'>
-                <a href='#' class='nav-link header-nav-link'>
-                  <i class='fa fa-bars header-menu__icon icon-menu' aria-hidden='true'></i>
-                  Категории</a>
-              </li>
               <li class='nav-item'>
                 <a href='#' class='nav-link active'>Электроника</a>
               </li>
