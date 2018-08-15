@@ -370,6 +370,10 @@ ul {
   font-weight: 400;
   padding: 18px 40px 15px 40px;
   margin-top: 30px; }
+  .view-more:hover, .view-more:focus, .view-more:active {
+    text-decoration: none;
+    color: #fff;
+    background-color: #27a3bf; }
 
 .footer {
   background-color: #ecf1f5;
@@ -383,6 +387,10 @@ ul {
   line-height: 1.5rem;
   margin-top: 30px;
   margin-bottom: 20px; }
+  .footer-menu__header:hover {
+    font-size: 1.125rem;
+    color: #333;
+    text-decoration: none; }
 
 .footer-menu__link {
   color: #666;
@@ -391,7 +399,8 @@ ul {
   line-height: 1.875rem; }
   .footer-menu__link:hover {
     color: #666;
-    text-decoration: none; }
+    text-decoration: none;
+    font-weight: 700; }
 
 .footer__form {
   margin-top: 30px;
@@ -428,6 +437,10 @@ ul {
   font-size: 0.9375rem;
   font-weight: 400;
   line-height: 1.875rem; }
+  .subscribe-title:hover {
+    color: #333;
+    text-decoration: none;
+    font-weight: 700; }
 
 .footer-bottom {
   border-top: 1px solid #828282;
