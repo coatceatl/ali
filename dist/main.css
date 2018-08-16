@@ -566,7 +566,7 @@ ul {
   margin-top: 27px; }
 
 .modal-input.form-control {
-  margin-bottom: 12px;
+  margin-bottom: 18px;
   color: #636363;
   font-size: 0.875rem;
   border: 1px solid #8e8e8e;
@@ -608,6 +608,9 @@ ul {
   background-color: #fff;
   border: 1px solid #8e8e8e;
   border-left: 0; }
+
+.modal-social__link img:hover {
+  transform: scale(1.05); }
 
 /*!
  * Bootstrap v4.1.1 (https://getbootstrap.com/)
