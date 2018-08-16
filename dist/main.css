@@ -596,15 +596,12 @@ ul {
   color: #252525;
   font-size: 0.875rem;
   font-weight: 400;
-  line-height: 1.125rem; }
+  line-height: 1.125rem;
+  margin-top: 15px; }
 
 .sucsess {
   color: #0e7624;
   margin-top: 19px; }
-
-.alert {
-  color: #ff0000;
-  font-size: 0.75rem; }
 
 .eye-password {
   cursor: pointer;
@@ -612,23 +609,6 @@ ul {
   border: 1px solid #8e8e8e;
   border-left: 0; }
 
-/*
-.modal-social__link {
-  color: #fff;
-}
-.vk {
-  background-color: #757575;
-}
-.fb {
-  background-color: #3a579a;
-}
-.odnoklassniki {
-  background-color: #f77c00;
-}
-.google {
-  background-color: #df4e36;
-}
-*/
 /*!
  * Bootstrap v4.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
