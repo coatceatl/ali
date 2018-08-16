@@ -60,6 +60,18 @@ $(document).ready(function() {
 
      //$('.header-outline').toggleClass('button-active');
   });
+
+  /* vision/hidden signup*/
+
+  $('#visionSignup').on('click', function(e) {
+    e.preventDefault();
+    $('#signup').addClass('d-flex flex-column');
+  });
+
+  $('.modal-hidden').on('click', function(e) {
+    e.preventDefault();
+    $('#signup').removeClass('d-flex flex-column');
+  });
 });
 
 
