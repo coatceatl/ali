@@ -92,8 +92,8 @@
                      <div class='modal-content'>
                        <div class='modal-header'>
                          <h5 class='modal-title text-center pt-0' id='authModalTitle'>Авторизуйтесь на сайте:</h5>
-                         <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
-                           <span aria-hidden='true'>&times;</span>
+                         <button type='button' class='close modal-close' data-dismiss='modal' aria-label='Close'>
+                           <img src='src/img/close.png' alt=''>
                          </button>
                        </div>
                        <div class='modal-body'>
@@ -111,20 +111,20 @@
                                    </div>
                                  </div>
                                  <button class='header-top__button' type='button' id='eyePassword'>
-                                   <i class='fa fa-user m-icon' aria-hidden='true'></i>Войти
+                                   <i class='fa fa-user mr-2 m-icon' aria-hidden='true'></i>Войти
                                  </button>
                                </form>
                              </div>
                            </div>
 
                            <div class='row choose-signin'>
-                             <div class='col-4 offset-1'>
+                             <div class='col-6 col-sm-4 offset-sm-1'>
                                <h4 class='choose-title'>Вход с помощью приложения:</h4>
                                <div class='choose-content'>
                                  <a href='#'><img src='src/img/qr-icon.png' alt=''></a>
                                </div>
                              </div>
-                             <div class='col-5 offset-1'>
+                             <div class='col-6 col-sm-5 offset-sm-1'>
                                <h4 class='choose-title'>Вход с помощью социальных сетей:</h4>
                                <div class='choose-content'>
                                  <div class='row'>
@@ -151,7 +151,7 @@
 
                            <div class='row mt-35'>
                              <div class='col-12 text-center'>
-                               <a class='choose-title' href='#'>Впервые на сайте?</a>
+                               <a class='modal-link' href='#'>Впервые на сайте?</a>
                              </div>
                            </div>
                          </div>
@@ -165,7 +165,10 @@
                        <div class='modal-body'>
                          <div class='container'>
                            <div class='row'>
-                             <div class='col-8 mx-auto'>
+                             <div class='col-12 text-right'>
+                               <a href='#' class='modal-hidden'>Скрыть</a>
+                             </div>
+                             <div class='col-10 col-sm-8 mx-auto'>
                                <p class='choose-title'>Введите вашу электронную почту:</p>
                                <form class='form-signin text-center'>
                                  <label for="inputEmail" class="sr-only">Email address</label>

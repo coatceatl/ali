@@ -24,6 +24,17 @@
 .close {
   margin-left: 0;
 }
+.modal-hidden {
+  color: #9e9e9e;
+  font-size: remy(15px);
+  font-weight: 400;
+  line-height: remy(18px);
+  text-decoration: underline;
+  &:hover {
+    color: #9e9e9e;
+    text-decoration: none;
+  }
+}
 .modal-title {
   width: 100%;
   padding-top: 19px;
@@ -44,14 +55,21 @@
 }
 .choose-signin {
   margin-top: 29px;
+  margin-bottom: 27px;
 }
 .choose-title {
   color: #252525;
   font-size: remy(15px);
   font-weight: 400;
   line-height: remy(18px);
+}
+.modal-link {
+  color: #333;
+  font-size: remy(14px);
+  font-weight: 400;
+  line-height: remy(18px);
   &:hover {
-    color: #252525;
+    color: #333;
     font-weight: 700;
     text-decoration: none;
   }
