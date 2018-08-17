@@ -6,7 +6,7 @@ import 'bootstrap';
 import Swiper from 'swiper';
 
 $(document).ready(function() {
-  var mySwiper = new Swiper('.swiper-container', {
+  var mySwiper = new Swiper('#headerSwiper', {
     slidesPerView: 5,
     spaceBetween: 22,
     loop: true,
@@ -51,6 +51,16 @@ $(document).ready(function() {
       prevEl: '.swiper-button-prev',
     },
   });
+
+  /* product-slider */
+
+  var productSwiper = new Swiper('#productSwiper', {
+    navigation: {
+      nextEl: '.swiper-product-next',
+      prevEl: '.swiper-product-prev',
+    },
+  });
+
 
   /* toogle buttons товары-услуги*/
 

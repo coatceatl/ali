@@ -361,8 +361,11 @@ ul {
 
 .popular {
   background: url(img/bg-popular.png) center center/cover no-repeat;
-  padding-top: 50px;
+  padding-top: 25px;
   padding-bottom: 60px; }
+
+.popular-header {
+  margin-top: 25px; }
 
 .popular-icon {
   margin-left: 10px; }
@@ -633,6 +636,38 @@ ul {
 
 .modal-social__link img:hover {
   transform: scale(1.05); }
+
+.breadcrumb-link {
+  color: #333;
+  font-size: 0.875rem;
+  font-weight: 400; }
+  .breadcrumb-link:hover {
+    color: #27a3bf; }
+
+.product-slider {
+  height: 305px;
+  width: 478px;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: #fff; }
+
+.swiper-container__product {
+  height: 100%;
+  margin-top: 0; }
+
+.swiper-wrapper,
+.swiper-slide {
+  width: 100%; }
+
+.swiper-product-next {
+  position: absolute;
+  right: 0;
+  top: 50%; }
+
+.swiper-product-prev {
+  position: absolute;
+  margin-left: -15px;
+  top: 50%; }
 
 /*!
  * Bootstrap v4.1.1 (https://getbootstrap.com/)
@@ -3879,7 +3914,7 @@ input[type="button"].btn-block {
   text-decoration: none; }
 
 .breadcrumb-item.active {
-  color: #6c757d; }
+  color: #27a3bf; }
 
 .pagination {
   display: flex;
