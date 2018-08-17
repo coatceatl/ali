@@ -646,7 +646,6 @@ ul {
 
 .product-slider {
   height: 305px;
-  width: 478px;
   overflow: hidden;
   cursor: pointer;
   background-color: #fff; }
@@ -661,13 +660,15 @@ ul {
 
 .swiper-product-next {
   position: absolute;
-  right: 0;
-  top: 50%; }
+  right: 0; }
 
 .swiper-product-prev {
   position: absolute;
-  margin-left: -15px;
-  top: 50%; }
+  margin-left: -15px; }
+
+.product-about {
+  width: 100%;
+  margin-top: 20px; }
 
 /*!
  * Bootstrap v4.1.1 (https://getbootstrap.com/)

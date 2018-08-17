@@ -8,7 +8,7 @@
 }
 .product-slider {
   height: 305px;
-  width: 478px;
+//  width: 478px;
   overflow: hidden;
   cursor: pointer;
   background-color: #fff;
@@ -24,11 +24,13 @@
 .swiper-product-next {
   position: absolute;
   right: 0;
-  top: 50%;
 }
 .swiper-product-prev {
   position: absolute;
   margin-left: -15px;
-  top: 50%;
+}
+.product-about {
+  width: 100%;
+  margin-top: 20px;
 }
 
