@@ -666,9 +666,21 @@ ul {
   position: absolute;
   margin-left: -15px; }
 
-.product-about {
+.product-about,
+.product-descriptions {
   width: 100%;
-  margin-top: 20px; }
+  margin-top: 20px;
+  margin-bottom: 5px; }
+
+.title-descriptions {
+  color: #696969;
+  font-size: 1.125rem;
+  font-weight: 700; }
+
+.text-descriptions {
+  color: #696969;
+  font-size: 0.875rem;
+  font-weight: 400; }
 
 /*!
  * Bootstrap v4.1.1 (https://getbootstrap.com/)
