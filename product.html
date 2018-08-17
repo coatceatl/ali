@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang='ru'>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no'>
+    <title>Aliexpress</title>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/all.css'
+                           integrity='sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ' crossorigin='anonymous'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic-ext' rel='stylesheet'>
+    <link rel='stylesheet' href='dist/main.css'>
+  </head>
+  <body>
+    <header class='header'>
+      <nav class='navbar navbar-expand-md navbar-light header-top'>
+        <div class='container-fluid container-top'>
+          <a class='navbar-brand' href='#'>
+            <img src='src/img/logo.png' alt='logo'>
+          </a>
+          <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#nav-toggle'>
+            <span class='navbar-toggler-icon'></span>
+          </button>
+          <div class='collapse navbar-collapse' id='nav-toggle'>
+            <ul class='navbar-nav header-top__menu d-flex justify-content-between'>
+              <li class='header-top__item'>
+                <a class='header-top__button' href='#'>
+                  <i class='fa fa-info m-icon' aria-hidden='true'></i>
+                  <span class='hidden-lg'>Инфо</span>
+                </a>
+              </li>
+              <li class='header-top__item'>
+                <div class='header-top__location border-right'>
+                  <a class='header-top__link' href='#'>
+                    <i class='fa fa-map-marker-alt m-icon icon-blue' aria-hidden='true'></i>
+                    <span class='hidden-lg'>Ваш город</span>
+                    <i class='fa fa-chevron-down hidden-lg' aria-hidden='true'></i>
+                  </a>
+                </div>
+              </li>
+              <li class='header-top__item'>
+                <div class='phone'>
+                  <i class='fa fa-phone-volume m-icon icon-blue' aria-hidden='true'></i>
+                  <p class='phone__text hidden-lg'>8 (012) <span class='bold'>345-67-89</span></p>
+                </div>
+              </li>
+              <li class='header-top__item border-right'>
+                <a class='header-top__button' href='#'>
+                  <i class='fa fa-comment m-icon' aria-hidden='true'></i>
+                  <span class='hidden-lg'>Чат</span>
+                </a>
+              </li>
+              <li class='header-top__item d-flex align-items-center'>
+                <div class='header-top__avatar d-none'>
+                  <img src='src/img/avatar.png' class='m-icon' alt=''>
+                </div>
+                <div class='header-top__login d-none'>
+                  <a class='header-top__text' href='#'><u>webmaster</u>
+                    <i class='fa fa-chevron-down m-icon' aria-hidden='true'></i>
+                  </a>
+                </div>
+              </li>
+              <li class='header-top__item'>
+                <a href='#'>
+                  <i class='fa fa-balance-scale icon-blue' aria-hidden='true'></i>
+                </a>
+              </li>
+              <li class='header-top__item border-right'>
+                <a href='#'>
+                  <i class='far fa-heart d-none' aria-hidden='true'></i>
+                  <i class='fa fa-heart icon-red' aria-hidden='true'></i>
+                </a>
+              </li>
+              <li class='header-top__item'>
+                <a class='header-top__cart d-flex' href='#' data-toggle='modal' id='cartModal'>
+                  <div class='cart-img'>
+                    <img src='src/img/cart.png'>
+                  </div>
+                  <div class='cart-content d-flex flex-column'>
+                    <span class='header-top__text hidden-xs' aria-hidden='true'>В корзине
+                      <span class='header-top__cart-count' aria-hidden='true' id='cart-count'> 1 </span>товар
+                    </span>
+                    <span class='header-top__cart-cost hidden-xs' aria-hidden='true'>1 158 р.</span>
+                  </div>
+                </a>
+              </li>
+              <li class='header-top__item'>
+                 <button class='header-top__button' type='button' data-toggle='modal' data-target='#authModal'>
+                   <i class='fa fa-user mr-2 m-icon' aria-hidden='true'></i>Войти
+                 </button>
+
+                 <div class='modal fade' id='authModal' tabindex='-1' role='dialog' aria-labelledby='authModalTitle' aria-hidden='true'>
+                   <div class='modal-dialog modal-dialog-centered' role='document'>
+                     <div class='modal-content'>
+                       <div class='modal-header'>
+                         <h5 class='modal-title text-center pt-0' id='authModalTitle'>Авторизуйтесь на сайте:</h5>
+                         <button type='button' class='close modal-close' data-dismiss='modal' aria-label='Close'>
+                           <img src='src/img/close.png' alt=''>
+                         </button>
+                       </div>
+                       <div class='modal-body'>
+                         <div class='container'>
+                           <div class='row'>
+                             <div class='col-8 mx-auto'>
+                               <form class='form-signin text-center'>
+                                 <label for="inputEmail" class="sr-only">Email address</label>
+                                 <input type="email" id="inputEmail" class="modal-input form-control"
+                                                                     autocomplete='email' placeholder="Логин" required="" autofocus="" />
+                                 <label for="inputPassword" class="sr-only">Password</label>
+                                 <input type="password" id="inputPassword" class="modal-input form-control" autocomplete="current-password" placeholder="Пароль" aria-describedby="eyePassword" required="" />
+                                 <button class='button-full' type='button' id='eyePassword'>
+                                   <i class='fa fa-user mr-2 m-icon' aria-hidden='true'></i>Войти
+                                 </button>
+                               </form>
+                             </div>
+                           </div>
+
+                           <div class='row choose-signin'>
+                             <div class='col-12 col-sm-5 offset-sm-1 my-2 d-flex flex-column align-items-center'>
+                               <h4 class='choose-title'>Вход с помощью приложения:</h4>
+                               <div class='choose-content'>
+                                 <a class='modal-social__link' href='#'><img src='src/img/qr-icon.png' alt=''></a>
+                               </div>
+                             </div>
+                             <div class='col-12 col-sm-5 my-2 d-flex flex-column align-items-center'>
+                               <h4 class='choose-title'>Вход с помощью социальных сетей:</h4>
+                                 <div class='row'>
+                                   <div class='col-6 mx-2 modal-social'>
+                                     <a class='modal-social__link' href='#' target='_blank'>
+                                       <img src='src/img/fb.png' alt=''>
+                                     </a>
+                                   </div>
+                                   <div class='col-6 ml-2 modal-social'>
+                                     <a class='modal-social__link' href='#' target='_blank'>
+                                       <img src='src/img/vk.png' alt=''>
+                                     </a>
+                                   </div>
+                                   <div class='col-6 mx-2 modal-social'>
+                                     <a class='modal-social__link' href='#' target='_blank'>
+                                       <img src='src/img/class.png' alt=''>
+                                     </a>
+                                   </div>
+                                   <div class='col-6 ml-2 modal-social'>
+                                     <a class='modal-social__link' href='#' target='_blank'>
+                                       <img src='src/img/google.png' alt=''>
+                                     </a>
+                                   </div>
+                               </div>
+                             </div>
+                           </div>
+
+                           <div class='row mt-35'>
+                             <div class='col-12 text-center'>
+                               <a class='modal-link' href='#' id='visionSignup'>Впервые на сайте?</a>
+                             </div>
+                           </div>
+                         </div>
+                       </div>
+
+
+                       <!-- signup -->
+                       <div class='signup d-none' id='signup'>
+                       <div class='modal-header-signup'>
+                         <h5 class='modal-title modal-title__signup text-center pt-0' id='signupTitle'>Регистрация</h5>
+                       </div>
+                       <div class='modal-body'>
+                         <div class='container'>
+                           <div class='row'>
+                             <div class='col-12 text-right'>
+                               <a href='#' class='modal-hidden'>Скрыть</a>
+                             </div>
+                             <div class='col-10 col-sm-8 mx-auto'>
+                               <p class='choose-title'>Введите вашу электронную почту:</p>
+                               <form class='form-signin text-center'>
+                                 <label for="signupEmail" class="sr-only">Email address</label>
+                                 <input type='email' id='signupEmail' class='modal-input form-control' placeholder='xweb.fl@yandex.ru' required='' autofocus=''>
+                                 <button class='button-full' type='submit'>Зарегистрироваться</button>
+                               </form>
+                             </div>
+
+                             <div class='col-10 mx-auto text-center'>
+                               <p class='modal-text sucsess d-none' id='signup-sucsess'>Все прошло успешно! На вашу электронную почту отправленно
+                               письмо с подтверждением регистрации.</p>
+                             </div>
+                           </div>
+
+                           <div class='row choose-signin'>
+                             <div class='col-12 text-center'>
+                               <p class='modal-text'>Зарегистрироваться с помощью социальных сетей:</p>
+                               <a class='modal-social__link' href='#' target='_blank'>
+                                 <img src='src/img/fb.png' alt=''>
+                               </a>
+                               <a class='modal-social__link' href='#' target='_blank'>
+                                 <img src='src/img/vk.png' alt=''>
+                               </a>
+                               <a class='modal-social__link' href='#' target='_blank'>
+                                 <img src='src/img/class.png' alt=''>
+                               </a>
+                               <a class='modal-social__link' href='#' target='_blank'>
+                                 <img src='src/img/google.png' alt=''>
+                               </a>
+                             </div>
+                           </div>
+
+                         </div>
+                       </div>
+                       </div>
+
+
+                     </div>
+                   </div>
+                 </div>
+
+               </li>
+
+              <li class='header-top__item dropdown'>
+                <div class='dropbtn'></div>
+                <div class='dropdown-content'>
+                  <a class='flag active' href='#'>
+                    <img src='src/img/flag-ru.png' alt=''>
+                  </a>
+                  <a class='flag' href='#'></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class='header-bottom mt-30'>
+        <div class='container'>
+          <div class='row d-flex align-items-center header-bottom__options'>
+            <div class='col-12 col-sm-10 col-lg-4 mx-auto d-flex align-items-center justify-content-between header-bottom__options-left mt-30'>
+              <a class='header-outline button-active' href='#'>Товары</a>
+              <!--
+              <a class='arrow' href='#'> -->
+              <img src='src/img/search.png' alt=''>
+              <a class='header-outline' href='#'>Услуги</a>
+            </div>
+            <div class='col-12 col-lg-8 header-bottom__options-right mt-30'>
+              <form class='input-group'>
+                <input class='form-control header-bottom__options-form' type='search' placeholder='Введите название товара или услуги...'
+                aria-label='search' aria-describedby='#button-search'/>
+                <button class='header-bottom__options-btn' type='submit'><i class='fa fa-search header-bottom__icon icon-blue' aria-hidden='true'></i></button>
+                <a class='header-bottom__options-link' href='#'>Настроить поиск</a>
+              </form>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col-12 header-bottom__slider'>
+              <div class='swiper-container swiper-container-horizontal d-flex align-items-center justify-content-between'>
+                <div class='d-flex swiper-wrapper'>
+                  <div class='swiper-slide d-flex justify-content-center'><img src='src/img/slide-1.png' alt=''></div>
+                  <div class='swiper-slide d-flex justify-content-center'><img src='src/img/slide-2.png' alt=''></div>
+                  <div class='swiper-slide d-flex justify-content-center'><img src='src/img/slide-1.png' alt=''></div>
+                  <div class='swiper-slide d-flex justify-content-center'><img src='src/img/slide-3.png' alt=''></div>
+                  <div class='swiper-slide d-flex justify-content-center'><img src='src/img/slide-4.png' alt=''></div>
+                  <div class='swiper-slide d-flex justify-content-center'><img src='src/img/slide-1.png' alt=''></div>
+                  <div class='swiper-slide d-flex justify-content-center'><img src='src/img/slide-2.png' alt=''></div>
+                  <div class='swiper-slide d-flex justify-content-center'><img src='src/img/slide-1.png' alt=''></div>
+                  <div class='swiper-slide d-flex justify-content-center'><img src='src/img/slide-3.png' alt=''></div>
+                  <div class='swiper-slide d-flex justify-content-center'><img src='src/img/slide-4.png' alt=''></div>
+                </div>
+
+                <div class='swiper-button-next border-icon'><i class='fa fa-chevron-right'></i></div>
+                <div class='swiper-button-prev border-icon'><i class='fa fa-chevron-left'></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- header-navigarion -->
+      <nav class='navbar navbar-expand-lg header-navigation'>
+        <div class='header-navigation__wrapper container'>
+          <div class='col-12 col-lg-2 header-navigation__catalog'>
+            <div class='header-navigation-catalog__button dropdown'>
+              <a class='d-flex nav-link header-nav-link dropdown-toggle' href='#' role='button' id='headerNavigationDropdown'
+                 data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                <i class='fa fa-bars header-menu__icon icon-menu' aria-hidden='true'></i>Категории
+              </a>
+
+              <div class='header-navigation-catalog dropdown-menu' aria-labelledby='headerNavigationDropdown'>
+                <div class='header-navigation-catalog__list'>
+                  <a href='#' class='header-navigation-catalog__item dropdown-item'>Категория 1</a>
+                </div>
+                <div class='header-navigation-catalog__list'>
+                  <a href='#' class='header-navigation-catalog__item dropdown-item'>Категория 2</a>
+                </div>
+                <div class='header-navigation-catalog__list'>
+                  <a href='#' class='header-navigation-catalog__item dropdown-item header-nav-active'>Категория 3
+                    <i class='fa fa-chevron-right'></i>
+                  </a>
+
+                  <!--
+                    <div class="dropright">
+                      <a href='#' role="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropright
+                      </a>
+                      <div class="dropdown-menu">
+                        <a href='#' class='header-navigation-submenu__item dropdown-item'>- Категория 1</a>
+                        <a href='#' class='header-navigation-submenu__item dropdown-item'>- Категория 1</a>
+                        <a href='#' class='header-navigation-submenu__item dropdown-item'>- Категория 1</a>
+                      </div>
+                    </div>
+                  </a>
+                  -->
+                </div>
+                <div class='header-navigation-catalog__list'>
+                  <a href='#' class='header-navigation-catalog__item dropdown-item'>Категория 4</a>
+                </div>
+                <div class='header-navigation-catalog__list'>
+                  <a href='#' class='header-navigation-catalog__item dropdown-item'>Категория 5</a>
+                </div>
+                <div class='header-navigation-catalog__list'>
+                  <a href='#' class='header-navigation-catalog__item dropdown-item'>Категория 6</a>
+                </div>
+                <div class='header-navigation-catalog__list'>
+                  <a href='#' class='header-navigation-catalog__item dropdown-item'>Категория 7</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <ul class='navbar-nav nav-menu d-flex justify-content-between'>
+            <li class='nav-item'>
+              <a href='#' class='nav-link'>Электроника</a>
+            </li>
+            <li class='nav-item'>
+              <a href='#' class='nav-link'>Компьютеры</a>
+            </li>
+            <li class='nav-item'>
+              <a href='#' class='nav-link'>Бытовая техника</a>
+            </li>
+            <li class='nav-item'>
+              <a href='#' class='nav-link'>Детские товары</a>
+            </li>
+            <li class='nav-item'>
+              <a href='#' class='nav-link'>Зоотовары</a>
+            </li>
+            <li class='nav-item'>
+              <a href='#' class='nav-link'>Дом, дача, ремонт</a>
+            </li>
+            <li class='nav-item dropdown'>
+              <a href='#' class='nav-link dropdown-toggle' role='button' id='dropdown' data-toggle='dropdown'
+                aria-haspopup='true' aria-expanded='false'>Ещё
+                <i class='fa fa-chevron-down' aria-hidden='true'></i>
+              </a>
+              <div class='dropdown-menu' aria-labelledby='dropdown'>
+                <a class='dropdown-item nav-link' href='#'>Menu 1</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+   </header>
+
+    <main>
+    <section class='popular'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-md-12 popular-header d-flex justify-content-between'>
+            <h2>Популярные товары</h2>
+            <div class='popular-button d-flex'>
+              <i class='fa fa-th popular-icon border-icon active'></i>
+              <i class='fa fa-th-list popular-icon border-icon'></i>
+            </div>
+          </div>
+
+
+
+          <div class='col-12 col-sm-6 col-lg-4 col-xl-3 d-flex justify-content-center'>
+            <div class='card popular-content text-center d-flex align-items-center'>
+              <div class='card-header'>
+                <div class='popular-content__sale d-flex align-items-center justify-content-center'>Скидка</div>
+                <a class='card-img-top popular-content__img' href='#'><img src='src/img/product-1.png' alt=''></a>
+              </div>
+              <div class='card-body d-flex flex-column justify-content-between'>
+                <a class='card-category' href='#'>Женская обувь</a>
+                <a class='card-title' href='#'>Летняя обувь Абаркасы</a>
+                <div class='card-footer popular-content__price'>
+                  <div class='card-text'><span class='card-price'>550 </span>руб.</div>
+                  <div class='card-text card-old-price'>720 руб.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class='col-12 col-sm-6 col-lg-4 col-xl-3 d-flex justify-content-center'>
+            <div class='card popular-content text-center d-flex align-items-center'>
+              <div class='card-header'>
+                <div class='popular-content__sale d-flex align-items-center justify-content-center'>Скидка</div>
+                <a class='card-img-top popular-content__img' href='#'><img src='src/img/product-1.png' alt=''></a>
+              </div>
+              <div class='card-body d-flex flex-column justify-content-between'>
+                <a class='card-category' href='#'>Женская обувь</a>
+                <a class='card-title' href='#'>Летняя обувь Абаркасы</a>
+                <div class='card-footer popular-content__price'>
+                  <div class='card-text'><span class='card-price'>550 </span>руб.</div>
+                  <div class='card-text card-old-price'>720 руб.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class='col-12 col-sm-6 col-lg-4 col-xl-3 d-flex justify-content-center'>
+            <div class='card popular-content text-center d-flex align-items-center'>
+              <div class='card-header'>
+                <div class='popular-content__sale d-flex align-items-center justify-content-center'>Скидка</div>
+                <a class='card-img-top popular-content__img' href='#'><img src='src/img/product-1.png' alt=''></a>
+              </div>
+              <div class='card-body d-flex flex-column justify-content-between'>
+                <a class='card-category' href='#'>Женская обувь</a>
+                <a class='card-title' href='#'>Летняя обувь Абаркасы</a>
+                <div class='card-footer popular-content__price'>
+                  <div class='card-text'><span class='card-price'>550 </span>руб.</div>
+                  <div class='card-text card-old-price'>720 руб.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class='col-12 col-sm-6 col-lg-4 col-xl-3 d-flex justify-content-center'>
+            <div class='card popular-content text-center d-flex align-items-center'>
+              <div class='card-header'>
+                <div class='popular-content__sale d-flex align-items-center justify-content-center'>Скидка</div>
+                <a class='card-img-top popular-content__img' href='#'><img src='src/img/product-1.png' alt=''></a>
+              </div>
+              <div class='card-body d-flex flex-column justify-content-between'>
+                <a class='card-category' href='#'>Женская обувь</a>
+                <a class='card-title' href='#'>Летняя обувь Абаркасы</a>
+                <div class='card-footer popular-content__price'>
+                  <div class='card-text'><span class='card-price'>550 </span>руб.</div>
+                  <div class='card-text card-old-price'>720 руб.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class='col-12 col-sm-6 col-lg-3 mx-auto d-flex justify-content-center'>
+            <a href='#' class='view-more'>
+              <i class='fa fa-undo m-icon' aria-hidden='true'></i>Смотреть еще
+            </a>
+          </div>
+        </div>
+      <div>
+    </section>
+    </main>
+
+    <footer class='footer'>
+      <div class='container'>
+        <div class='row '>
+          <div class='col-6 col-md-4 col-lg-2'>
+            <a class='footer-menu__header' href='#'>О компании</a>
+            <ul class='footer-menu__list'>
+              <li class='footer-menu__item d-flex'>
+                <a class='footer-menu__link' href='#'>О нас</a>
+              </li>
+              <li class='footer-menu__item d-flex'>
+                <a class='footer-menu__link' href='#'>Новости</a>
+              </li>
+              <li class='footer-menu__item d-flex'>
+                <a class='footer-menu__link' href='#'>Вакансии</a>
+              </li>
+              <li class='footer-menu__item d-flex'>
+                <a class='footer-menu__link' href='#'>Отзывы</a>
+              </li>
+             </ul>
+          </div>
+
+          <div class='col-6 col-md-4 col-lg-2'>
+            <a class='footer-menu__header' href='#'>Покупателям</a>
+            <ul class='footer-menu__list'>
+              <li class='footer-menu__item d-flex'>
+                <a class='footer-menu__link' href='#'>Доставка</a>
+              </li>
+              <li class='footer-menu__item d-flex'>
+                <a class='footer-menu__link' href='#'>Оплата</a>
+              </li>
+              <li class='footer-menu__item d-flex'>
+                <a class='footer-menu__link' href='#'>Возврат товара</a>
+              </li>
+             </ul>
+          </div>
+
+          <div class='col-6 col-md-4 col-lg-2'>
+            <a class='footer-menu__header' href='#'>Парнерам</a>
+            <ul class='footer-menu__list'>
+              <li class='footer-menu__item d-flex'>
+                <a class='footer-menu__link' href='#'>Поставщикам</a>
+              </li>
+              <li class='footer-menu__item d-flex'>
+                <a class='footer-menu__link' href='#'>Оптом</a>
+              </li>
+              <li class='footer-menu__item d-flex'>
+                <a class='footer-menu__link' href='#'>Розница</a>
+              </li>
+              <li class='footer-menu__item d-flex'>
+                <a class='footer-menu__link' href='#'>Сертификаты</a>
+              </li>
+             </ul>
+          </div>
+
+          <div class='col-6 col-md-4 col-lg-2'>
+            <a class='footer-menu__header' href='#'>Контакты</a>
+            <ul class='footer-menu__list'>
+              <li class='footer-menu__item d-flex'>
+                <a class='footer-menu__link' href='#'>Реквизиты</a>
+              </li>
+              <li class='footer-menu__item d-flex'>
+                <a class='footer-menu__link' href='#'>Служба поддержки</a>
+              </li>
+              <li class='footer-menu__item d-flex'>
+                <a class='footer-menu__link' href='#'>Сотрудничество</a>
+              </li>
+              <li class='footer-menu__item d-flex'>
+                <a class='footer-menu__link' href='#'>Условия работы</a>
+              </li>
+             </ul>
+          </div>
+
+          <div class='col-12 col-md-6 col-lg-4 footer__sudscribe'>
+            <form class='input-group mb-3 footer__form mx-auto'>
+              <input class='form-control footer__input' type='email' placeholder='Ваш E-mail...'
+                aria-label='search' aria-describedby='#button-search' required/>
+              <button class='footer__button' type='submit'>Подписаться</button>
+            </form>
+            <a class='subscribe-title' href='#'>Подписаться на рассылку</a>
+          </div>
+        </div>
+
+        <div class='row footer-bottom'>
+          <div class='col-12 col-sm-6 col-lg-3'>
+            <h4 class='footer-bottom__title'>Поделиться ссылкой в соц сетях:</h4>
+            <ul class='footer-bottom__list d-flex justify-content-between'>
+              <li class='footer-bottom__item'>
+                <a class='footer-bottom__link' href='#' target='_blank'><i class='fab fa-facebook-f'></i></a>
+              </li>
+              <li class='footer-bottom__item'>
+                <a class='footer-bottom__link' href='#' target='_blank'><i class='fab fa-odnoklassniki'></i></a>
+              </li>
+              <li class='footer-bottom__item'>
+                <a class='footer-bottom__link' href='#' target='_blank'><i class='fab fa-vk'></i></a>
+              </li>
+              <li class='footer-bottom__item'>
+                <a class='footer-bottom__link' href='#' target='_blank'><i class='fab fa-twitter'></i></a>
+              </li>
+              <li class='footer-bottom__item'>
+                <a class='footer-bottom__link' href='#' target='_blank'><i class='fab fa-instagram'></i></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class='col-12 col-sm-6 col-lg-3 offset-lg-2'>
+            <h4 class='footer-bottom__title'>Мы принимаем к оплате:</h4>
+            <ul class='footer-bottom__list d-flex justify-content-between'>
+              <li class='footer-bottom__item'>
+                <a class='footer-bottom__link' href='#' target='_blank'><i class='fab fa-cc-visa'></i></a>
+              </li>
+              <li class='footer-bottom__item'>
+                <a class='footer-bottom__link' href='#' target='_blank'><i class='fab fa-cc-mastercard'></i></a>
+              </li>
+              <li class='footer-bottom__item'>
+                <a class='footer-bottom__link' href='#' target='_blank'><i class='fa fa-credit-card'></i></a>
+              </li>
+              <li class='footer-bottom__item'>
+                <a class='footer-bottom__link' href='#' target='_blank'><i class='fa fa-qrcode'></i></a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+    <script src='dist/main.js'></script >
+  </body>
+</html>
