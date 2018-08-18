@@ -468,13 +468,30 @@
                   <div class='specific-amount d-flex'>
                     <span class='specific-text__bold'>Колличество:</span>
                     <div class='specific-number'>
-                        <span class='form-inline specific-plus plus' id='minus'>-</span>
+                      <span class='form-inline specific-plus plus' id='minus'>-</span>
                       <input class='specific-input text-center' type='text' value='1'>
-                        <span class='form-inline specific-plus plus' id='plus'>+</span>
+                      <span class='form-inline specific-plus plus' id='plus'>+</span>
                     </div>
                   </div>
                   <div class='specific-delivery'>
-                    <span class='specific-text__bold'>Расчётное время доставки:</span>
+                    <form>
+                      <div class='form-group form-inline'>
+                        <label for='delivery' class='specific-text__bold'>Расчётное время доставки:</label>
+                        <select class='form-control delivery-input' id='delivery'>
+                          <option>Доставка курьером<span class='specific-link'>(17-22дн.)</span></option>
+                          <option>Доставка<span class='specific-link'>(10-15дн.)</span></option>
+                        </select>
+                      </div>
+                    </form>
+                  </div>
+                  <div class='specific-buttons d-flex justify-content-between'>
+                    <a class='header-outline button-active' href="#">Добавить товар в корзину</a>
+                    <a class='header-outline' href-'#'>Купить сейчас</a>
+                    <a href='#'><i class='fa fa-balance-scale icon-blue' aria-hidden='true'></i></a>
+                    <a href='#'>
+                      <i class='far fa-heart d-none' aria-hidden='true'></i>
+                      <i class='fa fa-heart icon-red' aria-hidden='true'></i>
+                    </a>
                   </div>
                 </div>
               </div>
