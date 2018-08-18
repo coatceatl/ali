@@ -652,11 +652,19 @@ ul {
 
 .swiper-container__product {
   height: 100%;
+  width: 100%;
   margin-top: 0; }
 
 .swiper-wrapper,
 .swiper-slide {
   width: 100%; }
+
+.swiper-slide.swiper-slide__product {
+  background-position: center;
+  background-size: cover;
+  width: 286px;
+  height: 286px;
+  text-align: center; }
 
 .swiper-product-next {
   position: absolute;
@@ -699,6 +707,16 @@ ul {
 .specific-rate {
   margin-bottom: 15px; }
 
+.rate-list {
+  display: inline-flex;
+  margin-right: 10px; }
+
+.star-full {
+  background: url(img/fullstar.png) 100% 100% no-repeat;
+  height: 16px;
+  width: 16px;
+  margin-right: 3px; }
+
 .specific-price__number {
   color: #252525;
   font-size: 1.5rem;
@@ -713,7 +731,36 @@ ul {
   margin-right: 10px; }
 
 .specific-link {
-  color: #27a3bf; }
+  color: #27a3bf;
+  text-decoration: underline;
+  font-size: 0.875rem;
+  font-weight: 400; }
+  .specific-link:hover {
+    color: #27a3bf;
+    text-decoration: none; }
+
+.specific-input {
+  width: 48px;
+  height: 29px;
+  border: 1px solid #e6e7e9;
+  margin-left: -4px;
+  margin-right: -4px; }
+
+.form-inline.specific-plus {
+  display: inline-flex; }
+
+.plus {
+  width: 24px;
+  height: 29px;
+  border: 1px solid #e6e7e9;
+  background-color: #27a3bf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff; }
+
+.specific-number {
+  margin-left: 24px; }
 
 .specific-article {
   margin-top: 22px;

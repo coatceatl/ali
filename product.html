@@ -370,8 +370,9 @@
 
           <div class='col-5'>
             <div class='product-slider'>
-              <div id='productSwipper' class='swiper-container swiper-container__product d-flex align-items-center justify-content-between'>
+              <div id='productSwiper' class='swiper-container swiper-container__product d-flex align-items-center justify-content-between'>
                 <div class='d-flex swiper-wrapper'>
+                  <div class='swiper-slide swiper-slide__product d-flex justify-content-center'><img src='src/img/product-slider/products-slider-1.png' alt=''></div>
                   <div class='swiper-slide d-flex justify-content-center'><img src='src/img/product-slider/products-slider-1.png' alt=''></div>
                 </div>
 
@@ -437,25 +438,44 @@
                 <div class="specific-body">
                   <p class='specific-text'><span class='specific-text__bold'>ID:</span> 232328308</p>
                   <div class='specific-rate'>
-                    <img class='specific-text' src='src/img/4.5stars.png' alt=''> 126 голоса (ов)
+                    <div class='rate-list'>
+                      <div class='star-full'></div>
+                      <div class='star-full'></div>
+                      <div class='star-full'></div>
+                      <div class='star-full'></div>
+                      <div class='star-full star-half'></div>
+                    </div>
+                    <span class='rate-reviews'> 126 голоса (ов)</span>
                   </div>
                   <div class='specific-price'>
                     <span class='specific-header'>Цена:</span>
-                    <span class='specific-price__number'> 12 965 руб.</span> /шт.            (от 12 965 руб. до 17 800 руб.)
+                    <span class='specific-price__number'> 12 965 руб.</span> /шт.
+                    <a class='mx-2' href='#'><img src='src/img/arrow-red.png' alt=''></a> (от 12 965 руб. до 17 800 руб.)
                   </div>
                   <div class='specific-qr'>
                     <a class='specific-link' href='#'>
                       <img class='specific-img' src='src/img/qr-icon.png' alt=''>Еще больше в приложении
+                      <i class='fa fa-caret-down' aria-hidden='true'></i>
                     </a>
                   </div>
                   <div class='specific-article'>
                     <span class='specific-header'>Артикул ЕЦП:</span>
                     <img src='src/img/barcode.png' alt=''>
-                    <a class='specific-link' href='#'>Код товара</a>
+                    <a class='specific-link' href='#'>Код товара
+                      <i class='fa fa-caret-down' aria-hidden='true'></i>
+                    </a>
                   </div>
-                  <div class='specific-count'>
+                  <div class='specific-amount d-flex'>
                     <span class='specific-text__bold'>Колличество:</span>
-                    <img src='src/img/count.png' alt=''>
+                    <div class='specific-number'>
+                      <div class='form-inline specific-plus'>
+                        <span class='plus' id='minus'>-</span>
+                      </div>
+                      <input class='specific-input text-center' type='text' value='1'>
+                      <div class='form-inline specific-plus'>
+                        <span class='plus' id='plus'>+</span>
+                      </div>
+                    </div>
                   </div>
                   <div class='specific-delivery'>
                     <span class='specific-text__bold'>Расчётное время доставки:</span>
@@ -463,6 +483,10 @@
                 </div>
               </div>
             </div>
+
+            <div class='map' id='map' style='width: 644px; height: 268px'>
+            </div>
+
           </div>
 
           <div class='col-md-12 popular-header d-flex justify-content-between'>
@@ -679,6 +703,7 @@
       </div>
     </footer>
 
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src='dist/main.js'></script >
   </body>
 </html>

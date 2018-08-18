@@ -55,6 +55,10 @@ $(document).ready(function() {
   /* product-slider */
 
   var productSwiper = new Swiper('#productSwiper', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    centeredSlides: true,
     navigation: {
       nextEl: '.swiper-product-next',
       prevEl: '.swiper-product-prev',
@@ -82,7 +86,19 @@ $(document).ready(function() {
     e.preventDefault();
     $('#signup').removeClass('d-flex flex-column');
   });
+
+  /* yandex map */
+
+  ymaps.ready(init);
+
+  function init(){
+    var myMap = new ymaps.Map('map', {
+      center: [59.939095, 30.315868],
+      zoom: 11
+    });
+  }
 });
+
 
 
 

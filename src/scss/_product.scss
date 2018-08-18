@@ -15,11 +15,19 @@
 }
 .swiper-container__product {
   height: 100%;
+  width: 100%;
   margin-top: 0;
 }
 .swiper-wrapper,
 .swiper-slide {
   width: 100%;
+}
+.swiper-slide.swiper-slide__product {
+  background-position: center;
+  background-size: cover;
+  width: 286px;
+  height: 286px;
+  text-align: center;
 }
 .swiper-product-next {
   position: absolute;
