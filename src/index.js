@@ -54,7 +54,7 @@ $(document).ready(function() {
 
   /* product-slider */
 
-  var productSwiper = new Swiper('#productSwiper', {
+  var productSwiper = new Swiper('#productSwiper-big', {
     slidesPerView: 1,
     spaceBetween: 20,
     loop: true,

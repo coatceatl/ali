@@ -370,14 +370,33 @@
 
           <div class='col-5'>
             <div class='product-slider'>
-              <div id='productSwiper' class='swiper-container swiper-container__product d-flex align-items-center justify-content-between'>
+              <div id='productSwiper-big' class='swiper-container swiper-container__product d-flex align-items-center justify-content-between'>
                 <div class='d-flex swiper-wrapper'>
-                  <div class='swiper-slide swiper-slide__product d-flex justify-content-center'><img src='src/img/product-slider/products-slider-1.png' alt=''></div>
-                  <div class='swiper-slide d-flex justify-content-center'><img src='src/img/product-slider/products-slider-1.png' alt=''></div>
+                  <div class='swiper-slide swiper-slide__product d-flex justify-content-center'>
+                    <img src='src/img/product-slider/products-slider-1.png' alt=''>
+                  </div>
+                  <div class='swiper-slide swiper-slide__product d-flex justify-content-center'>
+                    <img src='src/img/product-slider/products-slider-1.png' alt=''>
+                  </div>
                 </div>
 
                 <div class='swiper-product-next border-icon'><i class='fa fa-chevron-right'></i></div>
                 <div class='swiper-product-prev border-icon'><i class='fa fa-chevron-left'></i></div>
+              </div>
+
+              <div class="swiper-small-gallery swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide sm-active-slide">
+                    <img src='src/img/product-2.png' alt=''>
+                    <span class="sw-smg-img"></span>
+                  </div>
+                  <div class="swiper-slide sm-active-slide">
+                    <img src='src/img/product-2.png' alt=''>
+                  </div>
+                  <div class="swiper-slide sm-active-slide">
+                    <img src='src/img/product-2.png' alt=''>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -387,8 +406,8 @@
                   <h5 class='title-descriptions'>Характеристики продукта</h5>
                 </div>
                 <div class='product-card__body'>
-                  <a href='#' class='specific-link card-bordered'>Ссылка на сертификат</a>
-                  <p class='specific-text card-bordered'>
+                  <a href='#' class='specific-link about-link'>Ссылка на сертификат</a>
+                  <p class='specific-text card-bordered border-top'>
                     <span class='specific-text__bold'>Производитель: </span>Испания
                   </p>
                   <p class='specific-text card-bordered'>
@@ -556,7 +575,7 @@
                     </a>
                   </div>
                   <div class='specific-amount d-flex'>
-                    <span class='specific-text__bold'>Колличество:</span>
+                    <span class='specific-text__bold'>Количество:</span>
                     <div class='specific-number'>
                       <span class='form-inline specific-plus plus' id='minus'>-</span>
                       <input class='specific-input text-center' type='text' value='1'>
@@ -575,12 +594,12 @@
                     </form>
                   </div>
                   <div class='specific-buttons d-flex justify-content-between align-items-center'>
-                    <a class='header-outline button-active' href="#">Добавить товар в корзину</a>
-                    <a class='header-outline' href-'#'>Купить сейчас</a>
-                    <a href='#'><i class='fa fa-balance-scale icon-blue' aria-hidden='true'></i></a>
+                    <a class='specific-buttons-outline active' href="#">Добавить товар в корзину</a>
+                    <a class='specific-buttons-outline' href='#'>Купить сейчас</a>
+                    <a href='#'><i class='fa fa-balance-scale icon-blue specific-icons bordered' aria-hidden='true'></i></a>
                     <a href='#'>
-                      <i class='far fa-heart d-none' aria-hidden='true'></i>
-                      <i class='fa fa-heart icon-red' aria-hidden='true'></i>
+                      <i class='far fa-heart specific-icons d-none' aria-hidden='true'></i>
+                      <i class='fa fa-heart specific-icons icon-red' aria-hidden='true'></i>
                     </a>
                   </div>
                 </div>
@@ -590,7 +609,40 @@
             <div class='product-map'>
               <div class='map' id='map' style='width: 644px; height: 268px'></div>
               <div class='map-offers'>
+                <div class='product-card'>
+                <div class='product-card__header'>
+                  <h5 class='title-descriptions'> Стоимость:</h5>
+                </div>
+                <div class='product-card__body'>
+                </div>
+                <div class='offers-amount'>Всего 5 437 предложений</div>
+                <div class='product-card__footer text-center'>
+                  <a class='product-card__link' href='#'>
+                    <i class='fa fa-undo m-icon' aria-hidden='true'></i>Показать все предложения
+                  </a>
+                </div>
               </div>
+
+              <div class='protect'>
+                <h5 class='title-descriptions'>Защита покупателя
+                  <i class='fa fa-info icon-blue' aria-hidden='true'></i>
+                </h5>
+                <div class='protect-content'>
+                  <div>
+                    <input type='checkbox' checked></span>
+                    <span>Полный возврат если вы не получили товар</span>
+                  </div>
+                  <div>
+                    <input type='checkbox' checked></span>
+                    <span>Возврат платежа при несоответствии описанию</span>
+                  </div>
+                </div>
+                <a class='protect-link' href='#'>Пожаловаться
+                  <i class='fa fa-caret-down' aria-hidden='true'></i>
+                </a>
+              </div>
+              </div>
+
             </div>
 
             <div class='product-tabs'>
@@ -737,11 +789,8 @@
           </div>
 
           <div class='col-md-12 popular-header d-flex justify-content-between'>
-            <h2>Популярные товары</h2>
-            <div class='popular-button d-flex'>
-              <i class='fa fa-th popular-icon border-icon active'></i>
-              <i class='fa fa-th-list popular-icon border-icon'></i>
-            </div>
+            <h5 class='title-descriptions'>Информация о продавце</h5>
+            <a class='product-card__link' href='#'><u>Показать все</u></a>
           </div>
 
 

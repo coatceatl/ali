@@ -764,6 +764,33 @@ ul {
   border-bottom: 1px solid #dbdbdb;
   margin-bottom: 17px; }
 
+.card-bordered {
+  border-top: 1px solid #ececec;
+  padding-top: 12px; }
+
+.specific-link.about-link {
+  font-weight: 700; }
+
+.border-top {
+  margin-top: 12px; }
+
+.protect {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.125rem; }
+
+.protect-link {
+  color: #ff0000; }
+
+.protect-content {
+  margin-top: 20px;
+  margin-bottom: 18px; }
+
+/**/
+.swiper-small-gallery {
+  height: 100px;
+  width: 400px; }
+
 .specific-header {
   color: #252525;
   font-size: 1.25rem;
@@ -821,7 +848,8 @@ ul {
   margin-right: -4px; }
 
 .form-inline.specific-plus {
-  display: inline-flex; }
+  display: inline-flex;
+  cursor: pointer; }
 
 .plus {
   width: 24px;
@@ -854,12 +882,42 @@ ul {
   padding-bottom: 36px;
   margin-right: 60px; }
 
+.specific-buttons-outline {
+  background-color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.125rem;
+  color: #333;
+  border-radius: 25px;
+  border: 1px solid #064b99;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+  padding: 16px 30px 14px 30px; }
+  .specific-buttons-outline:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #064b99; }
+
+.specific-buttons-outline.active {
+  background-color: #064b99;
+  color: #fff; }
+
+.specific-icons {
+  font-size: 21px; }
+
+.specific-icons.bordered {
+  border-right: 2px solid #000;
+  padding-right: 20px; }
+
 .product-tabs {
   margin-top: 20px;
   color: #333333;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.125rem; }
+
+.map-offers {
+  margin-top: 11px; }
 
 .tabs-title {
   color: #929292;

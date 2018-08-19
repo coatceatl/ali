@@ -57,6 +57,7 @@
 }
 .form-inline.specific-plus {
   display: inline-flex;
+  cursor: pointer;
 }
 .plus {
   width: 24px;
@@ -88,4 +89,33 @@
   padding-top: 19px;
   padding-bottom: 36px;
   margin-right: 60px;
+}
+.specific-buttons-outline {
+  background-color: #fff;
+  font-family: $font-family-sans-serif;
+  font-size: remy(15px);
+  font-weight: 400;
+  line-height: remy(18px);
+  color: #333;
+  border-radius: 25px;
+  border: 1px solid #064b99;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+  padding: 16px 30px 14px 30px;
+
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #064b99;
+  }
+}
+.specific-buttons-outline.active {
+  background-color: #064b99;
+  color: #fff;
+}
+.specific-icons {
+  font-size: 21px;
+}
+.specific-icons.bordered {
+  border-right: 2px solid #000;
+  padding-right: 20px;
 }
