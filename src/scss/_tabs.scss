@@ -1,0 +1,35 @@
+.product-tabs {
+  margin-top: 20px;
+  color: #333333;
+  font-size: remy(14px);
+  font-weight: 400;
+  line-height: remy(18px);
+}
+.tabs-title {
+  color: #929292;
+  font-size: remy(18px);
+  font-weight: 700;
+  line-height: remy(18px);
+}
+.tab-pane.active {
+  background-color: #f8fdfe;
+}
+.review-item {
+  border-top: 1px solid #ccc;
+  margin-top: 15px;
+  padding-top: 17px;
+  font-size: remy(14px);
+  font-weight: 400;
+  line-height: remy(18px);
+}
+.review-user-avatar {
+  margin-right: 17px;
+  margin-bottom: 11px;
+}
+.review-product {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  color: #a8a8a8;
+  display: flex;
+  justify-content: space-between;
+}

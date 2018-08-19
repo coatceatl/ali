@@ -484,7 +484,7 @@
                       </div>
                     </form>
                   </div>
-                  <div class='specific-buttons d-flex justify-content-between'>
+                  <div class='specific-buttons d-flex justify-content-between align-items-center'>
                     <a class='header-outline button-active' href="#">Добавить товар в корзину</a>
                     <a class='header-outline' href-'#'>Купить сейчас</a>
                     <a href='#'><i class='fa fa-balance-scale icon-blue' aria-hidden='true'></i></a>
@@ -524,13 +524,120 @@
                     (Отзывов: 14)
                   </h2>
                   <div class='tabs-filter'>
+                    <span>Все отзывы</span>
+                    <div class='filter-stars'>
+                      <span class='checkbox'>
+                        <input id='reviews-stars' class='checkbox-control' type='checkbox'>
+                      </span>
+                      <label class='checkbox-label' for='reviews-stars'>5 звезд</label>
+                    </div>
+
                     <div class='filter-photo'>
                       <span class='checkbox'>
                         <input id='reviews-with-photo' class='checkbox-control' type='checkbox'>
                       </span>
                       <label class='checkbox-label' for='reviews-with-photo'>С фото</label>
                     </div>
+
+                    <div class='filter-personal'>
+                      <span class='checkbox'>
+                        <input id='reviews-personal' class='checkbox-control' type='checkbox'>
+                      </span>
+                      <label class='checkbox-label' for='reviews-personal'>С личной информацией</label>
+                    </div>
+
+                    <div class='filter-personal'>
+                      <span class='checkbox'>
+                        <input id='reviews-adds' class='checkbox-control' type='checkbox'>
+                      </span>
+                      <label class='checkbox-label' for='reviews-adds'>Дополнительные отзывы</label>
+                    </div>
+
+                    <div class='filter-russia'>
+                      <span class='checkbox'>
+                        <input id='reviews-adds' class='checkbox-control' type='checkbox'>
+                      </span>
+                      <label class='checkbox-label' for='reviews-russia'>Только от покупателей из россии</label>
+                    </div>
+
+                    <div class='filter-translate'>
+                      <span class='checkbox'>
+                        <input id='reviews-translate' class='checkbox-control' type='checkbox'>
+                      </span>
+                      <label class='checkbox-label' for='reviews-translate'>Перевести на русский</label>
+                    </div>
+
+                    <button>По умолчанию</button>
                   </div>
+
+                  <!-- list of reviews -->
+                  <div class='reviews-list'>
+                    <div class='review-item d-flex'>
+                      <div class='review-user-profile d-flex flex-column align-items-center'>
+                        <div class='review-user-avatar'>
+                          <img src='src/img/user.png' alt='user'>
+                        </div>
+                        <div class='review-user-name'>А***О</div>
+                      </div>
+
+                      <div class='review-content'>
+                        <div class='rate-list'>
+                          <div class='star-full'></div>
+                          <div class='star-full'></div>
+                          <div class='star-full'></div>
+                          <div class='star-full'></div>
+                          <div class='star-full star-half'></div>
+                        </div>
+                        <div class='review-product'>
+                          <span class='review-product__options'>Bungle: 16G</span>
+                          <span class='review-product__color'>Color: Silver</span>
+                          <span class='review-product__delivery'>Доставка: AliExpress Standart Shipping</span>
+                        </div>
+                        <div class='review-text'>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                          bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                          justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus
+                          et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla
+                          luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien
+                          nunc accuan eget.
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class='review-item d-flex'>
+                      <div class='review-user-profile d-flex flex-column align-items-center'>
+                        <div class='review-user-avatar'>
+                          <img src='src/img/user.png' alt='user'>
+                        </div>
+                        <div class='review-user-name'>А***О</div>
+                      </div>
+
+                      <div class='review-content'>
+                        <div class='rate-list'>
+                          <div class='star-full'></div>
+                          <div class='star-full'></div>
+                          <div class='star-full'></div>
+                          <div class='star-full'></div>
+                          <div class='star-full star-half'></div>
+                        </div>
+                        <div class='review-product'>
+                          <span class='review-product__options'>Bungle: 16G</span>
+                          <span class='review-product__color'>Color: Silver</span>
+                          <span class='review-product__delivery'>Доставка: AliExpress Standart Shipping</span>
+                        </div>
+                        <div class='review-text'>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                          bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                          justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus
+                          et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla
+                          luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien
+                          nunc accuan eget.
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
                 </div>
                 <div class='tab-pane fade' id='delivery' role='tabpanel' aria-labelledby='tabs-delivery'>Доставка и оплата:</div>
                 <div class='tab-pane fade' id='guarantee' role='tabpanel' aria-labelledby='tabs-guarantee'>Гарантия продавца:</div>
