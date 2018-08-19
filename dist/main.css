@@ -674,6 +674,25 @@ ul {
   position: absolute;
   margin-left: -15px; }
 
+.product-card {
+  background-color: #f8fdfe; }
+
+.product-card__header {
+  background-color: #fff;
+  padding-top: 14px;
+  padding-bottom: 18px;
+  padding-left: 16px; }
+
+.product-card__body {
+  padding: 15px 46px 21px 16px; }
+
+.product-card__footer {
+  background-color: #fff;
+  padding-top: 14px;
+  padding-bottom: 14px; }
+  .product-card__footer:hover, .product-card__footer:focus, .product-card__footer:active {
+    box-shadow: 5px 9px 20px rgba(5, 22, 65, 0.3); }
+
 .product-about,
 .product-descriptions {
   width: 100%;
@@ -688,7 +707,16 @@ ul {
 .text-descriptions {
   color: #696969;
   font-size: 0.875rem;
-  font-weight: 400; }
+  font-weight: 400;
+  background-color: #f8fdfe; }
+
+.product-card__link {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  color: #222; }
+  .product-card__link:hover {
+    color: #222;
+    text-decoration: none; }
 
 .specific-header {
   color: #252525;
