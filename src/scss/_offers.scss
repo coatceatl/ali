@@ -1,3 +1,16 @@
+.map {
+  border: 6px solid #fff;
+  position: relative;
+}
+.map-marker {
+  background: url(../img/map.png) 100% 100% no-repeat;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  width: 25px;
+  height: 25px;
+}
 .map-offers {
   margin-bottom: 25px;
 }

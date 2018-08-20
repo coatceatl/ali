@@ -836,11 +836,6 @@ ul {
   margin-top: 20px;
   margin-bottom: 18px; }
 
-/**/
-.swiper-small-gallery {
-  height: 100px;
-  width: 400px; }
-
 .specific-header {
   color: #252525;
   font-size: 1.25rem;
@@ -1026,6 +1021,19 @@ ul {
 .tabs-filter__bottom {
   padding-top: 15px;
   paddin-bottom: 15px; }
+
+.map {
+  border: 6px solid #fff;
+  position: relative; }
+
+.map-marker {
+  background: url(img/map.png) 100% 100% no-repeat;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  width: 25px;
+  height: 25px; }
 
 .map-offers {
   margin-bottom: 25px; }
