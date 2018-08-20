@@ -41,6 +41,7 @@
   font-size: remy(14px);
   font-weight: 400;
   line-height: remy(18px);
+  padding-bottom: 15px;
 }
 .review-user-avatar {
   margin-right: 17px;
@@ -59,4 +60,8 @@
   justify-content: space-around;
   height: 50px;
   background-color: #fff;
+}
+.tabs-filter__bottom {
+  padding-top: 15px;
+  paddin-bottom: 15px;
 }

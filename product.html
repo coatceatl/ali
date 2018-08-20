@@ -652,7 +652,7 @@
                            role='tab' aria-controls='review' aria-selected='true'>Отзывы (126)</a>
                 </li>
                 <li class='nav-item tabs-item product-tabs__item'>
-                  <a class='nav-link tabs-link product-tabs__link' href='#delivery' id='tabs-delivery' data-toggle='tab'
+                  <a class='nav-link tabs-link product-tabs__link' href='#delivery1' id='tabs-delivery1' data-toggle='tab'
                            role='tab' aria-controls='delivery' aria-selected='true'>Доставка и оплата:</a>
                 </li>
                 <li class='nav-item tabs-item product-tabs__item'>
@@ -698,22 +698,23 @@
                     </div>
                   </div>
 
-                  <div class='tabs-filter'>
-                    <div class='filter-russia'>
+                  <div class='tabs-filter tabs-filter__bottom row mx-3 align-items-center'>
+                    <div class='col filter-russia pl-0'>
                       <span class='checkbox'>
                         <input id='reviews-adds' class='checkbox-control' type='checkbox'>
                       </span>
-                      <label class='checkbox-label' for='reviews-russia'>Только от покупателей из россии</label>
+                      <label class='checkbox-label' for='reviews-russia'>Только от покупателей<br/> из россии</label>
                     </div>
 
-                    <div class='filter-translate'>
+                    <div class='col filter-translate'>
                       <span class='checkbox'>
                         <input id='reviews-translate' class='checkbox-control' type='checkbox'>
                       </span>
                       <label class='checkbox-label' for='reviews-translate'>Перевести на русский</label>
                     </div>
-
-                    <button>По умолчанию</button>
+                    <div class='col'>
+                      <button class='btn btn-outline-dark btn-tabs' type='button'>По умолчанию</button>
+                    </div>
                   </div>
 
                   <!-- list of reviews -->
@@ -783,37 +784,58 @@
                     </div>
 
                   </div>
+                  <div class='product-card__footer text-center'>
+                    <a class='product-card__link' href='#'>
+                      <i class='fa fa-undo m-icon' aria-hidden='true'></i>Смотреть все характеристики
+                    </a>
+                  </div>
 
                 </div>
 
                 <!-- tabs delivery -->
-                <div class='tab-pane fade' id='delivery' role='tabpanel' aria-labelledby='tabs-delivery'>Доставка и оплата:</div>
+                <div class='tab-pane fade' id='delivery1' role='tabpanel' aria-labelledby='tabs-delivery1'>
+                  <h2 class='tabs-title text-center'>Доставка и оплата:</h2>
+                  <div class='review-content'>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                  Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar
+                  sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                  mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed
+                  rhoncus pronin sapien nunc accuan eget.
+                  </div>
+                  <div class='review-text'>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                  Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar
+                  sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                  mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed
+                  rhoncus pronin sapien nunc accuan eget.
+                  </div>
+                </div>
 
                 <!-- tabs protect -->
                 <div class='tab-pane fade' id='protect' role='tabpanel' aria-labelledby='tabs-protect'>
                   <h2 class='tabs-title text-center'>Гарантия продавца:</h2>
-                </div>
 
-                <div class='review-content'>
+                  <div class='review-content'>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
                   Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar
                   sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
                   mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed
                   rhoncus pronin sapien nunc accuan eget.
-                </div>
-                <div class='review-text'>
+                  </div>
+                  <div class='review-text'>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
                   Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar
                   sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
                   mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed
                   rhoncus pronin sapien nunc accuan eget.
-                </div>
-                <div class='review-text'>
+                  </div>
+                  <div class='review-text'>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
                   Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar
                   sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
                   mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed
                   rhoncus pronin sapien nunc accuan eget.
+                  </div>
                 </div>
               </div>
             </div>

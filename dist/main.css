@@ -951,7 +951,8 @@ ul {
   padding-top: 17px;
   font-size: 0.875rem;
   font-weight: 400;
-  line-height: 1.125rem; }
+  line-height: 1.125rem;
+  padding-bottom: 15px; }
 
 .review-user-avatar {
   margin-right: 17px;
@@ -970,6 +971,10 @@ ul {
   justify-content: space-around;
   height: 50px;
   background-color: #fff; }
+
+.tabs-filter__bottom {
+  padding-top: 15px;
+  paddin-bottom: 15px; }
 
 /*!
  * Bootstrap v4.1.1 (https://getbootstrap.com/)
