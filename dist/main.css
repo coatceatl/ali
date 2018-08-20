@@ -646,6 +646,7 @@ ul {
 
 .product-slider {
   height: 363px;
+  width: 100%;
   overflow: hidden;
   cursor: pointer;
   background-color: #fff; }
@@ -659,7 +660,8 @@ ul {
 .swiper-container__product-small {
   position: absolute;
   height: 58px;
-  width: 445px;
+  max-width: 445px;
+  width: 100%;
   margin-top: 7px;
   overflow: hidden; }
 

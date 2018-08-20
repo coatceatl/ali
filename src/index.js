@@ -72,6 +72,24 @@ $(document).ready(function() {
     spaceBetween: 5,
     loop: true,
     loopFillGroupWithBlank: true,
+    breakpoints: {
+    // when window width is <= 375px
+    // when window width is <= 740px
+    740: {
+      slidesPerView: 2,
+      spaceBetween: 15
+    },
+    // when window width is <= 992px
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 10
+    },
+    // when window width is <= 1140px
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 10
+    },
+    },
     navigation: {
       nextEl: '.swiper-product-next-sm',
       prevEl: '.swiper-product-prev-sm',
