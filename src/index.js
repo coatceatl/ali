@@ -65,6 +65,19 @@ $(document).ready(function() {
     },
   });
 
+  /* product multislider */
+
+  var productSmallSwiper = new Swiper('#productSwiper-small', {
+    slidesPerView: 5,
+    spaceBetween: 5,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    navigation: {
+      nextEl: '.swiper-product-next-sm',
+      prevEl: '.swiper-product-prev-sm',
+    },
+  });
+
 
   /* toogle buttons товары-услуги*/
 
