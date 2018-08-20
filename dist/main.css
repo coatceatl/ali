@@ -923,9 +923,25 @@ ul {
   color: #929292;
   font-size: 1.125rem;
   font-weight: 700;
-  line-height: 1.125rem; }
+  line-height: 1.125rem;
+  padding-top: 21px;
+  padding-bottom: 15px;
+  width: 245px;
+  margin: 0 auto; }
 
 .tab-pane.active {
+  background-color: #f8fdfe; }
+
+.product-tabs__item {
+  width: 33.33%; }
+
+.product-tabs__link {
+  height: 47px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center; }
+
+.nav-link.tabs-link.product-tabs__link.active {
   background-color: #f8fdfe; }
 
 .review-item {
