@@ -952,7 +952,8 @@ ul {
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.125rem;
-  padding-bottom: 15px; }
+  padding-bottom: 15px;
+  padding-right: 20px; }
 
 .review-user-avatar {
   margin-right: 17px;
@@ -975,6 +976,65 @@ ul {
 .tabs-filter__bottom {
   padding-top: 15px;
   paddin-bottom: 15px; }
+
+.map-offers {
+  margin-bottom: 25px; }
+
+.offer-header {
+  background-color: #fff;
+  padding-top: 19px;
+  padding-bottom: 15px; }
+
+.offer-title {
+  color: #333;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.125rem; }
+
+.block-bg {
+  background-color: #f8fdfe; }
+
+.offer-body {
+  height: 147px; }
+
+.offer-list {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; }
+
+.offer-item {
+  margin-top: 11px;
+  margin-bottom: 11px; }
+
+.offer-link {
+  color: #696969;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.125rem; }
+  .offer-link:hover {
+    color: #696969; }
+
+.store-link {
+  font-size: 0.875rem; }
+
+.offer-amount {
+  padding-top: 16px;
+  padding-bottom: 15px; }
+
+.protect {
+  margin-top: 25px; }
+
+.offer-green {
+  color: #00cc99; }
+
+.offer-red {
+  color: #ff1717; }
+
+.anyClass {
+  height: 140px;
+  overflow-y: scroll; }
 
 /*!
  * Bootstrap v4.1.1 (https://getbootstrap.com/)
