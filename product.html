@@ -656,45 +656,49 @@
                            role='tab' aria-controls='delivery' aria-selected='true'>Доставка и оплата:</a>
                 </li>
                 <li class='nav-item tabs-item product-tabs__item'>
-                  <a class='nav-link tabs-link product-tabs__link' href='#guarantee' id='tabs-guarantee' data-toggle='tab'
-                           role='tab' aria-controls='guarantee' aria-selected='true'>Гарантия продавца:</a>
+                  <a class='nav-link tabs-link product-tabs__link' href='#protect' id='tabs-protect' data-toggle='tab'
+                           role='tab' aria-controls='protect' aria-selected='true'>Гарантия продавца:</a>
                 </li>
               </ul>
-              <div class='tab-content' id='productTabsContent'>
-                <div class='tab-pane fade show active' id='review' role='tabpanel' aria-labelledby='tabs-review'>
+              <div class='tab-content product-tab__content' id='productTabsContent'>
+
+                <!-- tabs review -->
+                <div class='product-tab__pane tab-pane fade show active' id='review' role='tabpanel' aria-labelledby='tabs-review'>
                   <h2 class='tabs-title text-center'>Средний рейтинг: 4,9 из 5
                     (Отзывов: 14)
                   </h2>
-                  <div class='tabs-filter'>
+                  <div class='tabs-filter bg-white d-flex'>
                     <span>Все отзывы</span>
-                    <div class='filter-stars'>
-                      <span class='checkbox'>
+                    <div class='filter-stars d-flex align-items-center'>
+                      <span class='checkbox mr-2'>
                         <input id='reviews-stars' class='checkbox-control' type='checkbox'>
                       </span>
                       <label class='checkbox-label' for='reviews-stars'>5 звезд</label>
                     </div>
 
-                    <div class='filter-photo'>
-                      <span class='checkbox'>
+                    <div class='filter-photo d-flex align-items-center'>
+                      <span class='checkbox mr-2'>
                         <input id='reviews-with-photo' class='checkbox-control' type='checkbox'>
                       </span>
                       <label class='checkbox-label' for='reviews-with-photo'>С фото</label>
                     </div>
 
-                    <div class='filter-personal'>
-                      <span class='checkbox'>
+                    <div class='filter-personal d-flex align-items-center'>
+                      <span class='checkbox mr-2'>
                         <input id='reviews-personal' class='checkbox-control' type='checkbox'>
                       </span>
                       <label class='checkbox-label' for='reviews-personal'>С личной информацией</label>
                     </div>
 
-                    <div class='filter-personal'>
-                      <span class='checkbox'>
+                    <div class='filter-personal d-flex align-items-center'>
+                      <span class='checkbox mr-2'>
                         <input id='reviews-adds' class='checkbox-control' type='checkbox'>
                       </span>
                       <label class='checkbox-label' for='reviews-adds'>Дополнительные отзывы</label>
                     </div>
+                  </div>
 
+                  <div class='tabs-filter'>
                     <div class='filter-russia'>
                       <span class='checkbox'>
                         <input id='reviews-adds' class='checkbox-control' type='checkbox'>
@@ -781,8 +785,36 @@
                   </div>
 
                 </div>
+
+                <!-- tabs delivery -->
                 <div class='tab-pane fade' id='delivery' role='tabpanel' aria-labelledby='tabs-delivery'>Доставка и оплата:</div>
-                <div class='tab-pane fade' id='guarantee' role='tabpanel' aria-labelledby='tabs-guarantee'>Гарантия продавца:</div>
+
+                <!-- tabs protect -->
+                <div class='tab-pane fade' id='protect' role='tabpanel' aria-labelledby='tabs-protect'>
+                  <h2 class='tabs-title text-center'>Гарантия продавца:</h2>
+                </div>
+
+                <div class='review-content'>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                  Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar
+                  sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                  mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed
+                  rhoncus pronin sapien nunc accuan eget.
+                </div>
+                <div class='review-text'>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                  Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar
+                  sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                  mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed
+                  rhoncus pronin sapien nunc accuan eget.
+                </div>
+                <div class='review-text'>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                  Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar
+                  sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                  mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed
+                  rhoncus pronin sapien nunc accuan eget.
+                </div>
               </div>
             </div>
 

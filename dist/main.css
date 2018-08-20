@@ -929,7 +929,8 @@ ul {
   width: 245px;
   margin: 0 auto; }
 
-.tab-pane.active {
+.product-tab__pane,
+.product-tab__content {
   background-color: #f8fdfe; }
 
 .product-tabs__item {
@@ -962,6 +963,13 @@ ul {
   color: #a8a8a8;
   display: flex;
   justify-content: space-between; }
+
+.bg-white {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 50px;
+  background-color: #fff; }
 
 /*!
  * Bootstrap v4.1.1 (https://getbootstrap.com/)
